@@ -251,7 +251,7 @@ export function SettingsDrawer() {
               onChange={(v) => setS({ ...s, sources: { ...s.sources, getSongBpm: v } })} />
             <Field label="GetSongBPM API key (free)" value={gsbKey} onChange={setGsbKey}
               placeholder={s.sources.hasGetSongBpmApiKey ? '••• saved' : ''} />
-            <p className="label">key &amp; BPM data by GetSongBPM.com</p>
+            <p className="label">key &amp; BPM data by <a href="https://getsongbpm.com" target="_blank" rel="noreferrer" style={{ color: 'inherit' }}>GetSongBPM.com</a></p>
             <Field label="YouTube Data API key (optional)" value={ytKey} onChange={setYtKey}
               placeholder={s.sources.hasYoutubeApiKey ? '••• saved' : 'plain search links without it'} />
             <button className="btn" style={{ marginTop: 10 }} onClick={() => void saveSources()}>save sources</button>

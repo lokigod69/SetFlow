@@ -23,3 +23,19 @@ Wrong turns are part of the memory.
 **Decision:** All brain CLI adapters spawn with execa stdin:'ignore'; Deezer enrichment uses plain-text search + own scoring + /track/{id} for BPM.
 **Why:** codex exec with piped stdin prints its answer then blocks on "Reading additional input from stdin..." until timeout; Deezer's documented advanced search (artist:"X" track:"Y") now returns 0 results, and search hits omit bpm.
 **Rejected:** --json event parsing alone (kept as first attempt with plain fallback); Deezer search-hit bpm field (absent in practice).
+
+## 2026-07-14 — GetSongBPM: title-only search, own artist matching, no-match = no data
+**Status:** active
+**Decision:** Adapter hits `https://api.getsong.co/search/?type=song&lookup=<cleaned title>` with `X-API-KEY` header, matches artist client-side (normalized exact → substring), and returns nulls when no artist matches — never "first result".
+**Why:** Live research (2026-07): old host api.getsongbpm.com is Cloudflare-403 for scripts; documented `type=both` returns `{"error":"Bad query."}` in practice; `key_of` (musical notation, e.g. "F#m") is the key field; tempo is serialized as a string. A wrong track's BPM/key silently merged into facts is worse than a gap — gaps are visible as `estimated`.
+**Rejected:** trusting first search hit (wrong-artist contamination); `open_key` conversion (redundant — `key_of` parses fine).
+
+## 2026-07-14 — Launcher runs the server without watch mode
+**Status:** active
+**Decision:** `SetFlow.cmd` → `tools/launch.ps1` → `npm run start` (plain `tsx`, vite client). Dev workflow keeps `npm run dev` (tsx watch) unchanged.
+**Why:** `tsx watch` spawned without an interactive console wedges silently — child process alive but never binds :8321, zero output (reproduced 3×; plain `tsx` works in the same spawn chain). A launcher needs no hot reload.
+
+## 2026-07-14 — GetSongBPM registration via GitHub Pages backlink page (docs/index.html)
+**Status:** active
+**Decision:** Ship a Pages-ready `docs/index.html` ("BPM & musical key data powered by GetSongBPM" dofollow link) and register with that URL as both Website and Backlink. In-app credit link kept as good faith.
+**Why:** Registration requires a live public backlink BEFORE submitting; README links get `rel="nofollow"` from GitHub; a Pages page is the pattern real integrations use successfully (accounts suspended without notice otherwise).

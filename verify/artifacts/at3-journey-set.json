@@ -1,8 +1,8 @@
 {
-  "id": "ngPAEOZIHVnatK6odMhas",
+  "id": "L_JT3_jXaDU-a33Kb8-1c",
   "name": "journey set",
-  "createdAt": "2026-07-14T15:15:35.560Z",
-  "updatedAt": "2026-07-14T15:15:35.563Z",
+  "createdAt": "2026-07-14T15:47:25.528Z",
+  "updatedAt": "2026-07-14T15:47:25.530Z",
   "intent": {
     "mode": "journey",
     "startTrack": "Ben Böhmer – Beyond Beliefs",
@@ -45,7 +45,7 @@
   ],
   "pool": [
     {
-      "id": "WGSr22vPevUEeUtXwSpoH",
+      "id": "9c-_RFFH64KEvcFkWsLBl",
       "artist": "Ben Böhmer",
       "title": "Beyond Beliefs",
       "mix": "",
@@ -91,7 +91,7 @@
       "replaces": null
     },
     {
-      "id": "ot-yYpPvCj1O3K9FWmEpY",
+      "id": "bMm2ggTC7ps3nJS6Qp4Kb",
       "artist": "Ben Böhmer",
       "title": "Beyond Beliefs",
       "mix": "Extended Mix",
@@ -137,7 +137,7 @@
       "replaces": null
     },
     {
-      "id": "Jz0cD2wd1hdL-qC_ynl52",
+      "id": "2oYAF6JhQkcvAgCUYYR8n",
       "artist": "Yotto",
       "title": "The One You Left Behind",
       "mix": "Original Mix",
@@ -183,7 +183,7 @@
       "replaces": null
     },
     {
-      "id": "nowiC2x2sLPQDMN5uFVF3",
+      "id": "_raWvfs1jpW_H0LPA2qcP",
       "artist": "Tinlicker",
       "title": "Because You Move Me",
       "mix": "Extended Mix",
@@ -229,7 +229,7 @@
       "replaces": null
     },
     {
-      "id": "rYPKmd_LNujHzKhX9lDJ1",
+      "id": "HjfsK5oexsnbiLEd9oqbx",
       "artist": "&ME",
       "title": "As If",
       "mix": "Original Mix",
@@ -275,7 +275,7 @@
       "replaces": null
     },
     {
-      "id": "3K512a10wz1DitNIT4a9D",
+      "id": "Kjkss0TTY3mpB8HcYpYD5",
       "artist": "Adriatique",
       "title": "Home",
       "mix": "Original Mix",
@@ -321,7 +321,7 @@
       "replaces": null
     },
     {
-      "id": "Qe30wasOk2aJz6xx2DGXj",
+      "id": "T2zfn4Bg5YPSJZga1X62H",
       "artist": "Lane 8",
       "title": "Fingerprint",
       "mix": "Extended Mix",
@@ -367,7 +367,7 @@
       "replaces": null
     },
     {
-      "id": "CatQ6X9IRdebOGdzWn5Yq",
+      "id": "OHJzAs9NCNVF-qOh9Lf5c",
       "artist": "Ben Böhmer",
       "title": "Breathing",
       "mix": "Extended Mix",
@@ -413,7 +413,7 @@
       "replaces": null
     },
     {
-      "id": "6Z08h7nS5Z07VQdVayEHA",
+      "id": "FHJkFOblLf5LS3ElEl1vC",
       "artist": "Yotto",
       "title": "Walls",
       "mix": "Original Mix",
@@ -459,7 +459,7 @@
       "replaces": null
     },
     {
-      "id": "jp5B2rJkqjl-tKwHvt-Um",
+      "id": "5q99vISwnYfma7YnrG3-t",
       "artist": "Tinlicker",
       "title": "Children",
       "mix": "Extended Mix",
@@ -505,7 +505,7 @@
       "replaces": null
     },
     {
-      "id": "BpItGMpSu6ZmYCdnlNTgd",
+      "id": "_bYbD4FK-Sirh-q7rZjVi",
       "artist": "Marsh",
       "title": "Lailonie",
       "mix": "Original Mix",
@@ -551,7 +551,7 @@
       "replaces": null
     },
     {
-      "id": "XAx-zDH_H1PWy_w6oeTg2",
+      "id": "7q_NXwYzXQj1qVgIHMss9",
       "artist": "Nora En Pure",
       "title": "Birthright",
       "mix": "Extended Mix",
@@ -597,7 +597,7 @@
       "replaces": null
     },
     {
-      "id": "NqDiGBjaALmkytPcZUQFm",
+      "id": "bg1wU8cFl_F-czrwlQ_Rg",
       "artist": "Sultan + Shepard",
       "title": "Assassin",
       "mix": "Extended Mix",
@@ -643,7 +643,7 @@
       "replaces": null
     },
     {
-      "id": "cVDA5eHbcKGDvZO5ax5Yf",
+      "id": "XEDj6h-y2u7NK-cFI8YsI",
       "artist": "Le Youth",
       "title": "I Will Leave a Light On",
       "mix": "Extended Mix",
@@ -689,7 +689,7 @@
       "replaces": null
     },
     {
-      "id": "7i7nzEWQsHWC065snBtt7",
+      "id": "7XzLw2gMeLu7soEVeCsOF",
       "artist": "Eli & Fur",
       "title": "You and I",
       "mix": "Original Mix",
@@ -735,7 +735,7 @@
       "replaces": null
     },
     {
-      "id": "3c1wqNouSi8jO5m28DB4-",
+      "id": "sVvSPd5DqwxiAKuHDFkZ2",
       "artist": "Jody Wisternoff",
       "title": "For All Time",
       "mix": "Extended Mix",
@@ -781,7 +781,7 @@
       "replaces": null
     },
     {
-      "id": "FtxwdZFsmnH_GuXFfl9a3",
+      "id": "JKUvCGE16lroboDxWe7Xw",
       "artist": "Jerro",
       "title": "Tunnel Vision",
       "mix": "Original Mix",
@@ -827,7 +827,7 @@
       "replaces": null
     },
     {
-      "id": "6aeDBQD2ojbud7sDitvol",
+      "id": "pzsOmc813gTnvT0jg1yOF",
       "artist": "Dosem",
       "title": "Extraction",
       "mix": "Original Mix",
@@ -873,7 +873,7 @@
       "replaces": null
     },
     {
-      "id": "rsfcm9zQcouLbGW68R3kr",
+      "id": "U_NfCSCSuDBd_Qt64oNT7",
       "artist": "RÜFÜS DU SOL",
       "title": "Innerbloom",
       "mix": "Sasha Remix",
@@ -919,7 +919,7 @@
       "replaces": null
     },
     {
-      "id": "1ZxI3YmON_dxyiXT3SzLM",
+      "id": "a2iypxQ7VrvYTgOcfFjO1",
       "artist": "Kölsch",
       "title": "Grey",
       "mix": "Original Mix",
@@ -965,7 +965,7 @@
       "replaces": null
     },
     {
-      "id": "wvU4lk_SBW-Jg6fcLO48u",
+      "id": "wGvKn3Uucm88U9D-eGENr",
       "artist": "ARTBAT",
       "title": "Upperground",
       "mix": "Original Mix",
@@ -1011,7 +1011,7 @@
       "replaces": null
     },
     {
-      "id": "YJLe1ytZaSoWklF0DDTAv",
+      "id": "Akwr61ICzYivPUwDJ8qcO",
       "artist": "CamelPhat",
       "title": "Constellations",
       "mix": "Original Mix",
@@ -1057,7 +1057,7 @@
       "replaces": null
     },
     {
-      "id": "6pdcMqNuGg2GlYhFxDYj-",
+      "id": "S3NTf2lffWXoBDNjqHrBs",
       "artist": "WhoMadeWho",
       "title": "Abu Simbel",
       "mix": "Original Mix",
@@ -1103,7 +1103,7 @@
       "replaces": null
     },
     {
-      "id": "OdnGbFUfF0Mbz4oofm8hn",
+      "id": "8oe7X9OlOAL3Q3CeDw6f9",
       "artist": "Adriatique",
       "title": "Home",
       "mix": "Original Mix",
@@ -1155,21 +1155,21 @@
       "label": "On-curve journey",
       "rationale": "Traces the target arc as closely as the pool allows.",
       "trackIds": [
-        "WGSr22vPevUEeUtXwSpoH",
-        "Qe30wasOk2aJz6xx2DGXj",
-        "CatQ6X9IRdebOGdzWn5Yq",
-        "BpItGMpSu6ZmYCdnlNTgd",
-        "7i7nzEWQsHWC065snBtt7",
-        "rsfcm9zQcouLbGW68R3kr",
-        "6pdcMqNuGg2GlYhFxDYj-",
-        "1ZxI3YmON_dxyiXT3SzLM",
-        "3c1wqNouSi8jO5m28DB4-",
-        "OdnGbFUfF0Mbz4oofm8hn"
+        "9c-_RFFH64KEvcFkWsLBl",
+        "T2zfn4Bg5YPSJZga1X62H",
+        "OHJzAs9NCNVF-qOh9Lf5c",
+        "_bYbD4FK-Sirh-q7rZjVi",
+        "7XzLw2gMeLu7soEVeCsOF",
+        "U_NfCSCSuDBd_Qt64oNT7",
+        "S3NTf2lffWXoBDNjqHrBs",
+        "a2iypxQ7VrvYTgOcfFjO1",
+        "sVvSPd5DqwxiAKuHDFkZ2",
+        "8oe7X9OlOAL3Q3CeDw6f9"
       ],
       "transitions": [
         {
-          "fromTrackId": "WGSr22vPevUEeUtXwSpoH",
-          "toTrackId": "Qe30wasOk2aJz6xx2DGXj",
+          "fromTrackId": "9c-_RFFH64KEvcFkWsLBl",
+          "toTrackId": "T2zfn4Bg5YPSJZga1X62H",
           "keyRelation": "adjacent-up",
           "camelotPath": "8A→9A",
           "bpmDeltaPercent": 0.847457627118644,
@@ -1180,8 +1180,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "Qe30wasOk2aJz6xx2DGXj",
-          "toTrackId": "CatQ6X9IRdebOGdzWn5Yq",
+          "fromTrackId": "T2zfn4Bg5YPSJZga1X62H",
+          "toTrackId": "OHJzAs9NCNVF-qOh9Lf5c",
           "keyRelation": "same",
           "camelotPath": "9A→9A",
           "bpmDeltaPercent": 0.8403361344537815,
@@ -1192,8 +1192,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "CatQ6X9IRdebOGdzWn5Yq",
-          "toTrackId": "BpItGMpSu6ZmYCdnlNTgd",
+          "fromTrackId": "OHJzAs9NCNVF-qOh9Lf5c",
+          "toTrackId": "_bYbD4FK-Sirh-q7rZjVi",
           "keyRelation": "adjacent-up",
           "camelotPath": "9A→10A",
           "bpmDeltaPercent": 0.8333333333333334,
@@ -1204,8 +1204,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "BpItGMpSu6ZmYCdnlNTgd",
-          "toTrackId": "7i7nzEWQsHWC065snBtt7",
+          "fromTrackId": "_bYbD4FK-Sirh-q7rZjVi",
+          "toTrackId": "7XzLw2gMeLu7soEVeCsOF",
           "keyRelation": "relative",
           "camelotPath": "10A→10B",
           "bpmDeltaPercent": 0.8264462809917356,
@@ -1216,8 +1216,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "7i7nzEWQsHWC065snBtt7",
-          "toTrackId": "rsfcm9zQcouLbGW68R3kr",
+          "fromTrackId": "7XzLw2gMeLu7soEVeCsOF",
+          "toTrackId": "U_NfCSCSuDBd_Qt64oNT7",
           "keyRelation": "relative",
           "camelotPath": "10B→10A",
           "bpmDeltaPercent": 0,
@@ -1228,8 +1228,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "rsfcm9zQcouLbGW68R3kr",
-          "toTrackId": "6pdcMqNuGg2GlYhFxDYj-",
+          "fromTrackId": "U_NfCSCSuDBd_Qt64oNT7",
+          "toTrackId": "S3NTf2lffWXoBDNjqHrBs",
           "keyRelation": "adjacent-up",
           "camelotPath": "10A→11A",
           "bpmDeltaPercent": 0.819672131147541,
@@ -1240,8 +1240,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "6pdcMqNuGg2GlYhFxDYj-",
-          "toTrackId": "1ZxI3YmON_dxyiXT3SzLM",
+          "fromTrackId": "S3NTf2lffWXoBDNjqHrBs",
+          "toTrackId": "a2iypxQ7VrvYTgOcfFjO1",
           "keyRelation": "adjacent-up",
           "camelotPath": "11A→12A",
           "bpmDeltaPercent": 0.8130081300813009,
@@ -1252,8 +1252,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "1ZxI3YmON_dxyiXT3SzLM",
-          "toTrackId": "3c1wqNouSi8jO5m28DB4-",
+          "fromTrackId": "a2iypxQ7VrvYTgOcfFjO1",
+          "toTrackId": "sVvSPd5DqwxiAKuHDFkZ2",
           "keyRelation": "adjacent-up",
           "camelotPath": "12A→1A",
           "bpmDeltaPercent": 0.8064516129032258,
@@ -1264,8 +1264,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "3c1wqNouSi8jO5m28DB4-",
-          "toTrackId": "OdnGbFUfF0Mbz4oofm8hn",
+          "fromTrackId": "sVvSPd5DqwxiAKuHDFkZ2",
+          "toTrackId": "8oe7X9OlOAL3Q3CeDw6f9",
           "keyRelation": "relative",
           "camelotPath": "1A→1B",
           "bpmDeltaPercent": 0.8,
@@ -1301,21 +1301,21 @@
       "label": "Wandering path",
       "rationale": "Same endpoints, more tension in the middle third.",
       "trackIds": [
-        "WGSr22vPevUEeUtXwSpoH",
-        "CatQ6X9IRdebOGdzWn5Yq",
-        "Qe30wasOk2aJz6xx2DGXj",
-        "7i7nzEWQsHWC065snBtt7",
-        "BpItGMpSu6ZmYCdnlNTgd",
-        "6pdcMqNuGg2GlYhFxDYj-",
-        "rsfcm9zQcouLbGW68R3kr",
-        "3c1wqNouSi8jO5m28DB4-",
-        "1ZxI3YmON_dxyiXT3SzLM",
-        "OdnGbFUfF0Mbz4oofm8hn"
+        "9c-_RFFH64KEvcFkWsLBl",
+        "OHJzAs9NCNVF-qOh9Lf5c",
+        "T2zfn4Bg5YPSJZga1X62H",
+        "7XzLw2gMeLu7soEVeCsOF",
+        "_bYbD4FK-Sirh-q7rZjVi",
+        "S3NTf2lffWXoBDNjqHrBs",
+        "U_NfCSCSuDBd_Qt64oNT7",
+        "sVvSPd5DqwxiAKuHDFkZ2",
+        "a2iypxQ7VrvYTgOcfFjO1",
+        "8oe7X9OlOAL3Q3CeDw6f9"
       ],
       "transitions": [
         {
-          "fromTrackId": "WGSr22vPevUEeUtXwSpoH",
-          "toTrackId": "CatQ6X9IRdebOGdzWn5Yq",
+          "fromTrackId": "9c-_RFFH64KEvcFkWsLBl",
+          "toTrackId": "OHJzAs9NCNVF-qOh9Lf5c",
           "keyRelation": "adjacent-up",
           "camelotPath": "8A→9A",
           "bpmDeltaPercent": 1.694915254237288,
@@ -1326,8 +1326,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "CatQ6X9IRdebOGdzWn5Yq",
-          "toTrackId": "Qe30wasOk2aJz6xx2DGXj",
+          "fromTrackId": "OHJzAs9NCNVF-qOh9Lf5c",
+          "toTrackId": "T2zfn4Bg5YPSJZga1X62H",
           "keyRelation": "same",
           "camelotPath": "9A→9A",
           "bpmDeltaPercent": -0.8333333333333334,
@@ -1338,8 +1338,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "Qe30wasOk2aJz6xx2DGXj",
-          "toTrackId": "7i7nzEWQsHWC065snBtt7",
+          "fromTrackId": "T2zfn4Bg5YPSJZga1X62H",
+          "toTrackId": "7XzLw2gMeLu7soEVeCsOF",
           "keyRelation": "diagonal",
           "camelotPath": "9A→10B",
           "bpmDeltaPercent": 2.5210084033613445,
@@ -1356,8 +1356,8 @@
           ]
         },
         {
-          "fromTrackId": "7i7nzEWQsHWC065snBtt7",
-          "toTrackId": "BpItGMpSu6ZmYCdnlNTgd",
+          "fromTrackId": "7XzLw2gMeLu7soEVeCsOF",
+          "toTrackId": "_bYbD4FK-Sirh-q7rZjVi",
           "keyRelation": "relative",
           "camelotPath": "10B→10A",
           "bpmDeltaPercent": -0.819672131147541,
@@ -1368,8 +1368,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "BpItGMpSu6ZmYCdnlNTgd",
-          "toTrackId": "6pdcMqNuGg2GlYhFxDYj-",
+          "fromTrackId": "_bYbD4FK-Sirh-q7rZjVi",
+          "toTrackId": "S3NTf2lffWXoBDNjqHrBs",
           "keyRelation": "adjacent-up",
           "camelotPath": "10A→11A",
           "bpmDeltaPercent": 1.6528925619834711,
@@ -1380,8 +1380,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "6pdcMqNuGg2GlYhFxDYj-",
-          "toTrackId": "rsfcm9zQcouLbGW68R3kr",
+          "fromTrackId": "S3NTf2lffWXoBDNjqHrBs",
+          "toTrackId": "U_NfCSCSuDBd_Qt64oNT7",
           "keyRelation": "adjacent-down",
           "camelotPath": "11A→10A",
           "bpmDeltaPercent": -0.8130081300813009,
@@ -1392,8 +1392,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "rsfcm9zQcouLbGW68R3kr",
-          "toTrackId": "3c1wqNouSi8jO5m28DB4-",
+          "fromTrackId": "U_NfCSCSuDBd_Qt64oNT7",
+          "toTrackId": "sVvSPd5DqwxiAKuHDFkZ2",
           "keyRelation": "clash",
           "camelotPath": "10A→1A",
           "bpmDeltaPercent": 2.459016393442623,
@@ -1410,8 +1410,8 @@
           ]
         },
         {
-          "fromTrackId": "3c1wqNouSi8jO5m28DB4-",
-          "toTrackId": "1ZxI3YmON_dxyiXT3SzLM",
+          "fromTrackId": "sVvSPd5DqwxiAKuHDFkZ2",
+          "toTrackId": "a2iypxQ7VrvYTgOcfFjO1",
           "keyRelation": "adjacent-down",
           "camelotPath": "1A→12A",
           "bpmDeltaPercent": -0.8,
@@ -1422,8 +1422,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "1ZxI3YmON_dxyiXT3SzLM",
-          "toTrackId": "OdnGbFUfF0Mbz4oofm8hn",
+          "fromTrackId": "a2iypxQ7VrvYTgOcfFjO1",
+          "toTrackId": "8oe7X9OlOAL3Q3CeDw6f9",
           "keyRelation": "diagonal",
           "camelotPath": "12A→1B",
           "bpmDeltaPercent": 1.6129032258064515,

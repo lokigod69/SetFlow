@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "dev": "concurrently -n server,client -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "start": "concurrently -n server,client -c blue,magenta \"npm run start -w server\" \"npm run dev -w client\"",
     "dev:server": "npm run dev -w server",
     "dev:client": "npm run dev -w client",
     "dev:analyzer": "python analyzer/run.py",
