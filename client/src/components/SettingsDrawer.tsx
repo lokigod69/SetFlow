@@ -97,13 +97,12 @@ export function SettingsDrawer() {
   const [ytKey, setYtKey] = useState('');
 
   const load = async () => {
-    const [raw, brain, spot, an] = await Promise.all([
-      api.getSettings(), api.brainAdapters(), api.spotifyStatus(), api.analyzerStatus(),
-    ]);
-    setS(raw as unknown as ServerSettings);
-    setAdapters(brain.adapters);
-    setSpotifyName(spot.displayName);
-    setAnalyzer(an);
+    // Core settings gate the drawer render; the rest are best-effort so a slow
+    // or unreachable dependency (e.g. analyzer sidecar down) can never blank it.
+    setS((await api.getSettings()) as unknown as ServerSettings);
+    void api.brainAdapters().then((b) => setAdapters(b.adapters)).catch(() => undefined);
+    void api.spotifyStatus().then((spot) => setSpotifyName(spot.displayName)).catch(() => undefined);
+    void api.analyzerStatus().then(setAnalyzer).catch(() => setAnalyzer({ connected: false }));
   };
   useEffect(() => { if (open) void load(); }, [open]);
 
