@@ -6,10 +6,9 @@ build/
 .env.*
 !.env.example
 
-# runtime data
-server/data/*.db
-server/data/*.db-journal
-server/data/*.sqlite*
+# runtime data (server writes to server/server/data because its cwd is server/)
+server/data/
+server/server/data/
 
 # python
 __pycache__/
