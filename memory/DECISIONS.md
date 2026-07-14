@@ -17,3 +17,9 @@ Wrong turns are part of the memory.
 **Status:** active
 **Decision:** Build fully autonomously; no questions to the user. Anything unresolvable without the user (Spotify dev-app credentials, live CLI presence, listening tests) is built against mocks/fixtures, machine-verified as far as possible, and surfaced as mechanical FOR-YOU steps at handover.
 **Why:** Spec §0: "The user will NOT be in the loop. Make every decision yourself."
+
+## 2026-07-14 - CLI subprocess discipline: stdin must be ignored; Deezer needs 2-step plain-query lookup
+**Status:** active
+**Decision:** All brain CLI adapters spawn with execa stdin:'ignore'; Deezer enrichment uses plain-text search + own scoring + /track/{id} for BPM.
+**Why:** codex exec with piped stdin prints its answer then blocks on "Reading additional input from stdin..." until timeout; Deezer's documented advanced search (artist:"X" track:"Y") now returns 0 results, and search hits omit bpm.
+**Rejected:** --json event parsing alone (kept as first attempt with plain fallback); Deezer search-hit bpm field (absent in practice).
