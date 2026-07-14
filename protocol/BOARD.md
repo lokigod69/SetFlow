@@ -1,17 +1,18 @@
-# BOARD — SETFLOW — updated 2026-07-14 (checkpoint 3)
+# BOARD — SETFLOW — updated 2026-07-15 (checkpoint 4)
 
 ## ⚠️ WAITING ON YOU
-- Go-live credentials (both optional, steps in NEXT_STEP.md): Spotify Client ID (5 min) · GitHub Pages + GetSongBPM key (10 min).
+- Click **connect Spotify** in the app (Client ID already saved — one click).
+- Push the repo to github.com/lokigod69/SetFlow (my push was permission-blocked; commands in NEXT_STEP.md, or say "push it").
+- After push: Pages → GetSongBPM key (steps in NEXT_STEP.md).
 
 ## Workstreams
 | Workstream | Phase/Gate | Last done | Next | State |
 |---|---|---|---|---|
-| main | Go-live prep done → awaiting user keys | Desktop launcher verified, favicon, GetSongBPM adapter rewritten vs live API, backlink page | Live GetSongBPM check once key arrives; QA niceties | 🟢 active |
+| main | QA done → awaiting user go-live steps | Client ID wired, runtime data untracked, QA niceties (print/tray/history) browser-verified | Live AT6 once Spotify connected; Pages + GetSongBPM live check once pushed/key arrives | 🟢 active |
 
 ## Recently finished (last 5)
+- 2026-07-15 QA niceties: set-sheet print page-clip fix, tray z-index 40, history "pool 24" label — browser-verified (a5728d7)
+- 2026-07-15 Runtime data untracked (settings.json, cache.db*) + .gitignore path fix; history audited clean (7686d39)
+- 2026-07-15 Spotify Client ID saved via live settings API (hasClientId:true)
 - 2026-07-14 Desktop launcher (SETFLOW.lnk → all 3 services verified) + favicon.svg/.ico
-- 2026-07-14 GetSongBPM adapter rewrite vs live API (api.getsong.co, key_of, artist match) + latent Camelot-reparse crash fix
-- 2026-07-14 GetSongBPM research briefing (subagent) + Pages-ready backlink page (docs/index.html)
-- 2026-07-14 Live verification: claude CLI proposal (169s, tasteful), codex CLI round-trip, AT8 override flow, 5 themes in browser
-- 2026-07-14 Acceptance runner 10/10 machine checks PASS (+ live flags)
-- 2026-07-14 DitherKit global skill installed (Claude Code + Codex, clean-room)
+- 2026-07-14 GetSongBPM adapter rewrite vs live API + backlink page (docs/index.html)

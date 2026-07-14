@@ -39,3 +39,6 @@ Wrong turns are part of the memory.
 **Status:** active
 **Decision:** Ship a Pages-ready `docs/index.html` ("BPM & musical key data powered by GetSongBPM" dofollow link) and register with that URL as both Website and Backlink. In-app credit link kept as good faith.
 **Why:** Registration requires a live public backlink BEFORE submitting; README links get `rel="nofollow"` from GitHub; a Pages page is the pattern real integrations use successfully (accounts suspended without notice otherwise).
+
+## 2026-07-15 — Runtime data is never committed
+`server/server/data/` (settings.json with API keys, cache.db*) is untracked and gitignored. The old ignore patterns targeted `server/data/*` but the server cwd is `server/`, so runtime data lands one level deeper — anything secret-bearing must be verified against the REAL runtime path, not the path the code appears to name. History was audited before the public push: no secrets ever committed.

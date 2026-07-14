@@ -1,5 +1,5 @@
 # Current State
-Last updated: 2026-07-14 (end of session 2 — go-live prep)
+Last updated: 2026-07-15 (session 3 — Client ID wired, repo hygiene, QA niceties)
 
 ## What this is
 AI DJ Set Architect: intent → verified, ordered tracklist with an editable energy arc, Spotify playlist export, five swappable themes. Spec: `setflow-spec.md`. Mode 1 Autopilot, v1-done = spec §10 acceptance tests.
@@ -17,7 +17,9 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - Tests: shared 14, server 5, analyzer 58 — all green; tsc clean everywhere.
 
 ## In progress
-- Nothing mid-flight. Remaining QA niceties: set-sheet print view, curation-tray stick, SetHistory "pool 24" label.
+- Nothing mid-flight. QA niceties (print view, tray z-index, pool label) done 2026-07-15, browser-verified.
+- Spotify Client ID saved in settings (`hasClientId:true`); user still needs to click "connect Spotify" (PKCE OAuth).
+- Runtime data (`server/server/data/`: settings.json, cache.db*) untracked + gitignored; committed history audited clean.
 
 ## Known problems
 - Server test suite is thin (5 tests) — acceptance runner carries the real verification load.
@@ -30,6 +32,6 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - (none)
 
 ## Next actions
-1. USER: Spotify dev app + Client ID; GitHub repo + Pages → GetSongBPM key; paste both in Settings (exact steps in NEXT_STEP.md).
-2. After key arrives: live GetSongBPM verification (one enrich call, check `key_of` → Camelot lands as `getsongbpm`-sourced fact).
-3. Optional QA niceties: set-sheet print view, curation-tray stick, SetHistory label.
+1. USER: approve/run the push to https://github.com/lokigod69/SetFlow (remote add + push blocked by agent permission layer); then Pages (main, /docs) → GetSongBPM registration → paste key in Settings.
+2. USER: click "connect Spotify" in the app top bar (Client ID already saved; PKCE login is the only remaining step) → then live AT6 (real playlist create + re-export).
+3. After key arrives: live GetSongBPM verification (one enrich call, check `key_of` → Camelot lands as `getsongbpm`-sourced fact).

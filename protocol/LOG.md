@@ -13,3 +13,9 @@
 2026-07-15T00:00 | main | Desktop launcher (SETFLOW.lnk -> SetFlow.cmd -> launch.ps1, npm run start no-watch) verified via real double-click: client+server+analyzer 200 | evidence: curl probes in session
 2026-07-15T00:00 | main | Favicon promoted to client/public/favicon.svg + multi-size setflow.ico; served 200 | evidence: curl content-type image/svg+xml
 2026-07-15T00:00 | main | Backlink page docs/index.html (Pages-ready) + Settings credit link; analyzer venv confirmed installed (librosa 0.11) | evidence: import probe
+2026-07-15T | main | Resume: npm run verify -> 8 PASS + 2 PARTIAL (expected) | evidence: runner output in session
+2026-07-15T | main | Spotify Client ID saved via PUT /api/settings (hasClientId:true); OAuth connect awaits user click | evidence: API response in session
+2026-07-15T | main | Fixed .gitignore (server/server/data untracked: settings.json + cache.db*; history clean, no secrets ever committed) | evidence: commit 7686d39
+2026-07-15T | main | Push to github.com/lokigod69/SetFlow blocked by permission layer -> FOR YOU step | evidence: denial in session
+2026-07-15T | main | QA niceties done: print-view page-clip fix (wrapper static in print), tray z-index 40 restored, history "pool 24" label; browser-verified live | evidence: commit, CSSOM print sim + computed styles in session
+2026-07-15T | main | QA niceties done: print-view page-clip fix (wrapper static in print), tray z-index 40 restored, history pool-24 label; browser-verified live | evidence: commit, CSSOM print sim + computed styles in session
