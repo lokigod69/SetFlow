@@ -8,8 +8,9 @@ export interface BpmRead {
   read: 'straight' | 'half-time' | 'double-time';
 }
 
+/** NaN when either tempo is unknown (<= 0): an unknown BPM must never read as a 0% match. */
 export function deltaPercent(fromBpm: number, toBpm: number): number {
-  if (fromBpm <= 0) return 0;
+  if (fromBpm <= 0 || toBpm <= 0) return NaN;
   return ((toBpm - fromBpm) / fromBpm) * 100;
 }
 
@@ -41,5 +42,6 @@ export interface BpmPolicy {
 export const DEFAULT_BPM_POLICY: BpmPolicy = { maxDeltaPercent: 6, allowHalfDouble: true };
 
 export function withinPolicy(fromBpm: number, toBpm: number, policy: BpmPolicy = DEFAULT_BPM_POLICY): boolean {
-  return Math.abs(bestRead(fromBpm, toBpm, policy.allowHalfDouble).deltaPercent) <= policy.maxDeltaPercent;
+  const delta = bestRead(fromBpm, toBpm, policy.allowHalfDouble).deltaPercent;
+  return Number.isFinite(delta) && Math.abs(delta) <= policy.maxDeltaPercent;
 }

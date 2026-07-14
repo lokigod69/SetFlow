@@ -89,6 +89,13 @@ describe('bpm', () => {
     expect(withinPolicy(120, 132, DEFAULT_BPM_POLICY)).toBe(false);
     expect(withinPolicy(120, 240, DEFAULT_BPM_POLICY)).toBe(true); // double-time read
   });
+
+  it('treats an unknown (<= 0) BPM as unverified, never a 0% match', () => {
+    expect(deltaPercent(0, 128)).toBeNaN();
+    expect(deltaPercent(128, 0)).toBeNaN();
+    expect(withinPolicy(0, 128, DEFAULT_BPM_POLICY)).toBe(false);
+    expect(withinPolicy(128, 0, DEFAULT_BPM_POLICY)).toBe(false);
+  });
 });
 
 describe('curve', () => {

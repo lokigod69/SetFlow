@@ -7,6 +7,7 @@ export function formatDuration(ms: number | null | undefined): string {
 }
 
 export function formatDelta(value: number): string {
+  if (!Number.isFinite(value)) return '—';
   return `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
 }
 
