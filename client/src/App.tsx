@@ -12,6 +12,7 @@ import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { StagePulse } from './components/StagePulse';
 import { TrackCardOverlay } from './components/TrackCard';
 import { SpotifyBadge } from './components/SpotifyBadge';
+import { DitherBackdrop } from './fx/DitherBackdrop';
 import './styles.css';
 
 function Shell() {
@@ -33,6 +34,7 @@ function Shell() {
   return (
     <>
       <div className="atmosphere" aria-hidden />
+      <DitherBackdrop />
       <div className="app">
         <header className="topbar">
           <span className="wordmark">SETFLOW</span>

@@ -1,0 +1,478 @@
+{
+  "pool": [
+    {
+      "artist": "Polo & Pan",
+      "title": "Canopée",
+      "mix": "",
+      "estBpm": 105,
+      "estKey": "5A",
+      "estEnergy": 4,
+      "moodTags": [
+        "tropical",
+        "dreamy",
+        "golden-hour"
+      ],
+      "slot": "opener",
+      "why": "Feathery tropical downtempo-house that sets the palm-shade mood without demanding the floor"
+    },
+    {
+      "artist": "Marcos Valle",
+      "title": "Estrelar",
+      "mix": "",
+      "estBpm": 110,
+      "estKey": "6A",
+      "estEnergy": 5,
+      "moodTags": [
+        "brazilian-boogie",
+        "sunset",
+        "feel-good"
+      ],
+      "slot": "warmup",
+      "why": "Canonical Rio boogie — instant golden-hour authenticity and an easy tempo step up"
+    },
+    {
+      "artist": "Synapson",
+      "title": "Djon Maya Maï (feat. Victor Démé)",
+      "mix": "Extended Version",
+      "estBpm": 116,
+      "estKey": "7A",
+      "estEnergy": 6,
+      "moodTags": [
+        "organic-house",
+        "warm",
+        "vocal"
+      ],
+      "slot": "build",
+      "why": "Sun-soaked organic house bridge that lifts tempo and emotion in one move"
+    },
+    {
+      "artist": "Bakermat",
+      "title": "Baianá",
+      "mix": "Extended Mix",
+      "estBpm": 121,
+      "estKey": "8A",
+      "estEnergy": 7,
+      "moodTags": [
+        "brazilian-vocal",
+        "percussive",
+        "hands-up"
+      ],
+      "slot": "build",
+      "why": "Barbatuques chant over driving house — the moment the beach realizes it's a party"
+    },
+    {
+      "artist": "Sérgio Mendes",
+      "title": "Magalenha",
+      "mix": "Sharam Jey Remix",
+      "estBpm": 123,
+      "estKey": "8B",
+      "estEnergy": 8,
+      "moodTags": [
+        "samba",
+        "peak",
+        "carnival"
+      ],
+      "slot": "peak",
+      "why": "Carnival energy in club form; the major-key flip detonates the golden-hour peak"
+    },
+    {
+      "artist": "Zerb",
+      "title": "Mwaki (feat. Sofiya Nzau)",
+      "mix": "Extended Mix",
+      "estBpm": 125,
+      "estKey": "9B",
+      "estEnergy": 8,
+      "moodTags": [
+        "afro-house",
+        "hypnotic",
+        "peak"
+      ],
+      "slot": "peak",
+      "why": "Brazilian producer, global anthem — sustains the peak with a deeper hypnotic pulse"
+    },
+    {
+      "artist": "Vintage Culture",
+      "title": "It Is What It Is (feat. Elise LeGrow)",
+      "mix": "Extended Mix",
+      "estBpm": 122,
+      "estKey": "9A",
+      "estEnergy": 7,
+      "moodTags": [
+        "melodic",
+        "emotional",
+        "sunset"
+      ],
+      "slot": "cooldown",
+      "why": "São Paulo's finest easing the throttle — melodic warmth as the sun touches the water"
+    },
+    {
+      "artist": "Bebel Gilberto",
+      "title": "Aganjú",
+      "mix": "Latin Project Remix",
+      "estBpm": 118,
+      "estKey": "10A",
+      "estEnergy": 5,
+      "moodTags": [
+        "bossa-house",
+        "spiritual",
+        "afterglow"
+      ],
+      "slot": "closer",
+      "why": "Bossa royalty over a gentle house pulse — the definitive Brazilian sunset landing"
+    },
+    {
+      "artist": "Poolside",
+      "title": "Harvest Moon",
+      "mix": "",
+      "estBpm": 108,
+      "estKey": "1A",
+      "estEnergy": 4,
+      "moodTags": [
+        "daytime-disco",
+        "mellow",
+        "nostalgic"
+      ],
+      "slot": "opener",
+      "why": "Daytime-disco cover that opens arms-wide and unhurried, perfect first-drink tempo"
+    },
+    {
+      "artist": "Jorge Ben Jor",
+      "title": "Ponta de Lança Africano (Umbabarauma)",
+      "mix": "",
+      "estBpm": 112,
+      "estKey": "12A",
+      "estEnergy": 5,
+      "moodTags": [
+        "samba-funk",
+        "groove",
+        "classic"
+      ],
+      "slot": "warmup",
+      "why": "Deathless samba-funk groove — crate-digger credibility that still moves hips"
+    },
+    {
+      "artist": "Sofi Tukker",
+      "title": "Drinkee",
+      "mix": "",
+      "estBpm": 116,
+      "estKey": "11A",
+      "estEnergy": 6,
+      "moodTags": [
+        "portuguese-vocal",
+        "quirky",
+        "building"
+      ],
+      "slot": "build",
+      "why": "Portuguese-language jungle-pop house — playful tension that points at the peak"
+    },
+    {
+      "artist": "Salomé de Bahia",
+      "title": "Outro Lugar",
+      "mix": "Club Mix",
+      "estBpm": 122,
+      "estKey": "12A",
+      "estEnergy": 7,
+      "moodTags": [
+        "brazilian-house",
+        "uplifting",
+        "classic"
+      ],
+      "slot": "build",
+      "why": "Bob Sinclar-era Brazilian house grail — pure uplift, pure Bahia"
+    },
+    {
+      "artist": "Vintage Culture",
+      "title": "In The Dark (with Fancy Inc)",
+      "mix": "Extended Mix",
+      "estBpm": 124,
+      "estKey": "12B",
+      "estEnergy": 8,
+      "moodTags": [
+        "bass-house",
+        "driving",
+        "peak"
+      ],
+      "slot": "peak",
+      "why": "The Brazilian bass-house blueprint — locks the floor in at full commitment"
+    },
+    {
+      "artist": "Chemical Surf",
+      "title": "Hey Hey Hey (with Ashibah)",
+      "mix": "Extended Mix",
+      "estBpm": 125,
+      "estKey": "11B",
+      "estEnergy": 8,
+      "moodTags": [
+        "brazilian-bass",
+        "chant",
+        "peak"
+      ],
+      "slot": "peak",
+      "why": "Florianópolis peak-time chant weapon that keeps the crest rolling"
+    },
+    {
+      "artist": "Cat Dealers",
+      "title": "Sunshine (with LOthief & Santti)",
+      "mix": "",
+      "estBpm": 122,
+      "estKey": "10B",
+      "estEnergy": 7,
+      "moodTags": [
+        "feel-good",
+        "vocal",
+        "descending"
+      ],
+      "slot": "cooldown",
+      "why": "Literal sunshine energy at a softening intensity — the graceful step off the peak"
+    },
+    {
+      "artist": "Bellini",
+      "title": "Samba de Janeiro",
+      "mix": "",
+      "estBpm": 134,
+      "estKey": "3B",
+      "estEnergy": 9,
+      "moodTags": [
+        "carnival",
+        "anthem",
+        "kitsch"
+      ],
+      "slot": "wildcard",
+      "why": "Break-glass-in-case-of-carnival option if the crowd demands total eruption"
+    },
+    {
+      "artist": "Öwnboss",
+      "title": "Move Your Body (with Sevek)",
+      "mix": "Extended Mix",
+      "estBpm": 126,
+      "estKey": "2A",
+      "estEnergy": 8,
+      "moodTags": [
+        "brazilian-bass",
+        "command",
+        "peak"
+      ],
+      "slot": "wildcard",
+      "why": "Alternate Brazilian peak if the floor wants harder bass pressure"
+    },
+    {
+      "artist": "Gui Boratto",
+      "title": "Beautiful Life",
+      "mix": "",
+      "estBpm": 126,
+      "estKey": "4B",
+      "estEnergy": 7,
+      "moodTags": [
+        "melodic",
+        "euphoric",
+        "progressive"
+      ],
+      "slot": "wildcard",
+      "why": "Brazilian melodic-tech euphoria for a dreamier peak substitution"
+    },
+    {
+      "artist": "Céu",
+      "title": "Lenda",
+      "mix": "",
+      "estBpm": 92,
+      "estKey": "4A",
+      "estEnergy": 3,
+      "moodTags": [
+        "dub",
+        "sultry",
+        "afterglow"
+      ],
+      "slot": "afterglow",
+      "why": "Sultry São Paulo dub-pop for after the last blend, feet in the sand"
+    },
+    {
+      "artist": "Bebel Gilberto",
+      "title": "Samba da Bênção",
+      "mix": "",
+      "estBpm": 96,
+      "estKey": "7A",
+      "estEnergy": 3,
+      "moodTags": [
+        "bossa",
+        "intimate",
+        "dusk"
+      ],
+      "slot": "afterglow",
+      "why": "Whispered bossa benediction — the encore that needs no beatmatch"
+    },
+    {
+      "artist": "Barbatuques",
+      "title": "Baianá",
+      "mix": "",
+      "estBpm": 96,
+      "estKey": "8A",
+      "estEnergy": 4,
+      "moodTags": [
+        "body-percussion",
+        "roots",
+        "acapella"
+      ],
+      "slot": "wildcard",
+      "why": "The original body-percussion source of the Bakermat edit — a storytelling interlude"
+    },
+    {
+      "artist": "Stan Getz & Astrud Gilberto",
+      "title": "The Girl from Ipanema",
+      "mix": "",
+      "estBpm": 130,
+      "estKey": "6B",
+      "estEnergy": 2,
+      "moodTags": [
+        "bossa",
+        "iconic",
+        "pre-set"
+      ],
+      "slot": "warmup",
+      "why": "Pre-set ambience while the decks warm — the sound of Ipanema itself"
+    },
+    {
+      "artist": "Sango",
+      "title": "Me Dê Amor",
+      "mix": "",
+      "estBpm": 100,
+      "estKey": "5B",
+      "estEnergy": 5,
+      "moodTags": [
+        "baile-funk",
+        "beat",
+        "swagger"
+      ],
+      "slot": "wildcard",
+      "why": "Baile-funk-flavored beat music for a mid-set texture swerve"
+    },
+    {
+      "artist": "DJ Marky & XRS",
+      "title": "LK (Carolina Carol Bela) [feat. Stamina MC]",
+      "mix": "",
+      "estBpm": 174,
+      "estKey": "4B",
+      "estEnergy": 7,
+      "moodTags": [
+        "liquid-dnb",
+        "brazilian",
+        "surprise"
+      ],
+      "slot": "wildcard",
+      "why": "Half-time trick card (174→87) — Brazilian liquid d&b for a jaw-drop moment if the night stretches"
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "label": "Copacabana Ascension",
+      "rationale": "Organic golden-hour climb: tropical downtempo into Rio boogie, then percussive Brazilian house to a Magalenha/Mwaki double-peak, easing down through Vintage Culture into a bossa-house sunset closer. Every step is Camelot-adjacent (5A→6A→7A→8A→8B→9B→9A→10A) and no BPM jump exceeds 5.5%.",
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "transitions": [
+        {
+          "blend": "long-blend",
+          "note": "105→110: let Estrelar's bassline surface under Canopée's outro pads, 5A→6A"
+        },
+        {
+          "blend": "long-blend",
+          "note": "110→116: ride Estrelar's percussion out, bring Djon Maya Maï in over 16 bars, 6A→7A"
+        },
+        {
+          "blend": "long-blend",
+          "note": "116→121: layer Baianá's chant over the Synapson breakdown, 7A→8A"
+        },
+        {
+          "blend": "breakdown-swap",
+          "note": "121→123: swap during Baianá's drum break into Magalenha's whistle intro, 8A→8B relative-major lift"
+        },
+        {
+          "blend": "quick-cut",
+          "note": "123→125: cut on the one out of Magalenha's final chorus into Mwaki's vocal loop, 8B→9B"
+        },
+        {
+          "blend": "long-blend",
+          "note": "125→122: hypnotic outro of Mwaki dissolves into It Is What It Is pads, 9B→9A"
+        },
+        {
+          "blend": "long-blend",
+          "note": "122→118: echo the last vocal, land Aganjú as the sun hits the horizon, 9A→10A"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "label": "Bahia Bass Pressure",
+      "rationale": "Same arc, heavier spine: daytime-disco and samba-funk warmup, Sofi Tukker tension, then a classic-to-modern Brazilian house corridor (Outro Lugar → In The Dark → Hey Hey Hey) before Sunshine and the shared Aganjú landing. Chain runs 1A→12A→11A→12A→12B→11B→10B→10A with max 5.2% BPM steps.",
+      "order": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        7
+      ],
+      "transitions": [
+        {
+          "blend": "long-blend",
+          "note": "108→112: Harvest Moon's shimmer into Umbabarauma's guitar vamp, 1A→12A"
+        },
+        {
+          "blend": "quick-cut",
+          "note": "112→116: cut from Jorge Ben's chant straight into Drinkee's riff, 12A→11A"
+        },
+        {
+          "blend": "long-blend",
+          "note": "116→122: stretch Drinkee's outro, lift into Outro Lugar's strings, 11A→12A"
+        },
+        {
+          "blend": "breakdown-swap",
+          "note": "122→124: swap in In The Dark during Outro Lugar's breakdown, 12A→12B energy flip"
+        },
+        {
+          "blend": "long-blend",
+          "note": "124→125: bass-house handoff, filter Hey Hey Hey's chant in over 8 bars, 12B→11B"
+        },
+        {
+          "blend": "long-blend",
+          "note": "125→122: soften into Sunshine's vocal as intensity steps down, 11B→10B"
+        },
+        {
+          "blend": "long-blend",
+          "note": "122→118: echo-out into Aganjú for the shared bossa-house sunset close, 10B→10A"
+        }
+      ]
+    }
+  ],
+  "arcs": {
+    "A": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      8,
+      7,
+      5
+    ],
+    "B": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      8,
+      7,
+      5
+    ]
+  }
+}

@@ -178,6 +178,26 @@ export class MockBrainAdapter implements BrainAdapter {
     if (request.kind === 'alternatives') {
       return { alternatives: buildProposal(request).pool.slice(6, 9) };
     }
+    if (request.kind === 'finalize') {
+      // order over the starred tracks only — indices into the starred list
+      const n = Math.max(2, request.starredSummary.split('\n').filter(Boolean).length);
+      const order = Array.from({ length: n }, (_, i) => i);
+      // gentle journey: evens ascending then odds descending ≈ rise-peak-cooldown
+      const shaped = [...order.filter((i) => i % 2 === 0), ...order.filter((i) => i % 2 === 1).reverse()];
+      return {
+        pool: buildProposal(request).pool.slice(0, n),
+        options: [
+          {
+            id: 'final',
+            label: 'Final journey',
+            rationale: 'Starred tracks ordered into the smoothest available arc.',
+            order: shaped,
+            transitions: shaped.slice(1).map(() => ({ blend: 'long-blend' as const, note: 'Ride the overlap.' })),
+          },
+        ],
+        arcs: {},
+      };
+    }
     return buildProposal(request);
   }
 }
