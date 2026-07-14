@@ -17,7 +17,7 @@ Last updated: 2026-07-14
 
 ## Topic notes
 <!-- One line per page in notes/, added when created -->
-*(none yet)*
+- [[notes/dither-integration]] — DitherKit research, license verdict (clean-room), vendored core API, planned theme uses
 
 ## Rules for agents
 Read [[STATE]] at session start; open the rest only when needed. After meaningful work: prepend [[LOG]], refresh [[STATE]], append decisions to [[DECISIONS]]. Update, don't duplicate. Date everything. Mark wrong things `⚠️ superseded` — never leave known-false statements looking current. Never edit raw/. Full protocol: SecondBrainOS/PROTOCOL.md.

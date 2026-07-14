@@ -1,0 +1,2 @@
+import type { SetDocument } from '@setflow/shared';import { option,tracks } from './util.js';
+export function m3u8(doc:SetDocument,id:string){const o=option(doc,id);return ['#EXTM3U',...tracks(doc,o).flatMap(t=>{const line=`#EXTINF:${Math.round((t.durationMs?.value??0)/1000)},${t.artist} - ${t.title}`;return t.localFile?[line,t.localFile.path]:[line,`# Spotify: ${t.spotify?.url??''}`];})].join('\n')+'\n';}

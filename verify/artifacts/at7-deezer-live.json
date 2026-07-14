@@ -1,0 +1,44 @@
+{
+  "bpm": 121.96,
+  "sample": {
+    "id": 467968452,
+    "readable": true,
+    "title": "Constellations (Radio Edit)",
+    "title_short": "Constellations",
+    "title_version": "(Radio Edit)",
+    "isrc": "NLZ541500158",
+    "link": "https://www.deezer.com/track/467968452",
+    "duration": 187,
+    "rank": 172735,
+    "explicit_lyrics": false,
+    "explicit_content_lyrics": 0,
+    "explicit_content_cover": 2,
+    "preview": "https://cdnt-preview.dzcdn.net/api/1/1/3/8/6/0/386301e4ee2c3eea92730afec3dfe6cd.mp3?hdnea=exp=1784041135~acl=/api/1/1/3/8/6/0/386301e4ee2c3eea92730afec3dfe6cd.mp3*~data=user_id=0,application_id=42~hmac=8bc129b3602927eac4c9ccf8af15b3a63ee0d9f068a8fbd9a8cd255d2dfdd837",
+    "md5_image": "a0904ebb040fa4dbe052175748d40eec",
+    "artist": {
+      "id": 1484833,
+      "name": "CamelPhat",
+      "link": "https://www.deezer.com/artist/1484833",
+      "picture": "https://api.deezer.com/artist/1484833/image",
+      "picture_small": "https://cdn-images.dzcdn.net/images/artist/0323760d53e2a30fea1e66dafcb0f09e/56x56-000000-80-0-0.jpg",
+      "picture_medium": "https://cdn-images.dzcdn.net/images/artist/0323760d53e2a30fea1e66dafcb0f09e/250x250-000000-80-0-0.jpg",
+      "picture_big": "https://cdn-images.dzcdn.net/images/artist/0323760d53e2a30fea1e66dafcb0f09e/500x500-000000-80-0-0.jpg",
+      "picture_xl": "https://cdn-images.dzcdn.net/images/artist/0323760d53e2a30fea1e66dafcb0f09e/1000x1000-000000-80-0-0.jpg",
+      "tracklist": "https://api.deezer.com/artist/1484833/top?limit=50",
+      "type": "artist"
+    },
+    "album": {
+      "id": 58092032,
+      "title": "Constellations (Radio Edit)",
+      "cover": "https://api.deezer.com/album/58092032/image",
+      "cover_small": "https://cdn-images.dzcdn.net/images/cover/a0904ebb040fa4dbe052175748d40eec/56x56-000000-80-0-0.jpg",
+      "cover_medium": "https://cdn-images.dzcdn.net/images/cover/a0904ebb040fa4dbe052175748d40eec/250x250-000000-80-0-0.jpg",
+      "cover_big": "https://cdn-images.dzcdn.net/images/cover/a0904ebb040fa4dbe052175748d40eec/500x500-000000-80-0-0.jpg",
+      "cover_xl": "https://cdn-images.dzcdn.net/images/cover/a0904ebb040fa4dbe052175748d40eec/1000x1000-000000-80-0-0.jpg",
+      "md5_image": "a0904ebb040fa4dbe052175748d40eec",
+      "tracklist": "https://api.deezer.com/album/58092032/tracks",
+      "type": "album"
+    },
+    "type": "track"
+  }
+}

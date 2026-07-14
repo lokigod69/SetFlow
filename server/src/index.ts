@@ -1,11 +1,18 @@
-// SETFLOW server entry — scaffold placeholder, replaced by the API build.
 import Fastify from 'fastify';
+import cors from '@fastify/cors';
+import { registerRoutes } from './routes.js';
+import { registerSpotifyAuth } from './spotify/auth.js';
+import { settingsStore } from './config.js';
 
-const app = Fastify({ logger: true });
+export async function buildApp() {
+  const app = Fastify({ logger: false });
+  await app.register(cors, { origin: ['http://localhost:5173', 'http://127.0.0.1:5173'] });
+  registerRoutes(app);
+  registerSpotifyAuth(app, settingsStore);
+  return app;
+}
 
-app.get('/api/health', async () => ({ ok: true, service: 'setflow-server' }));
-
-app.listen({ port: 8321, host: '127.0.0.1' }).catch((err) => {
-  app.log.error(err);
-  process.exit(1);
-});
+if (process.argv[1]?.endsWith('index.ts') || process.argv[1]?.endsWith('index.js')) {
+  const app = await buildApp();
+  await app.listen({ port: 8321, host: '127.0.0.1' });
+}

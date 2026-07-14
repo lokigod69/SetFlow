@@ -1,0 +1,1455 @@
+{
+  "id": "ETJfiugwQ8KBuvhfn334o",
+  "name": "seed set",
+  "createdAt": "2026-07-14T14:43:57.413Z",
+  "updatedAt": "2026-07-14T14:43:57.418Z",
+  "intent": {
+    "mode": "seed",
+    "seedTrack": "Bicep – Glue (Original Mix)"
+  },
+  "constraints": {
+    "setSize": {
+      "type": "count",
+      "value": 10
+    },
+    "energyBehavior": "rise-peak-cooldown",
+    "harmonicStrictness": 0.8,
+    "bpmPolicy": {
+      "maxDeltaPercent": 6,
+      "allowHalfDouble": true
+    },
+    "vocals": "any",
+    "genresInclude": [],
+    "genresExclude": [],
+    "preferExtendedMixes": true,
+    "seedStrategy": "same-vibe"
+  },
+  "targetCurve": [
+    {
+      "x": 0,
+      "y": 0.3
+    },
+    {
+      "x": 0.45,
+      "y": 0.7
+    },
+    {
+      "x": 0.7,
+      "y": 0.95
+    },
+    {
+      "x": 1,
+      "y": 0.45
+    }
+  ],
+  "pool": [
+    {
+      "id": "h4ptGBuMSkL2BkujueVnX",
+      "artist": "Bicep",
+      "title": "Glue",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 118,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "8A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 3,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock180a76380ad6c8d0fa41be",
+        "uri": "spotify:track:mock180a76380ad6c8d0fa41be",
+        "url": "https://open.spotify.com/track/mock180a76380ad6c8d0fa41be",
+        "resolvedArtist": "Bicep",
+        "resolvedTitle": "Glue (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Bicep%20Glue%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "c3FV-00mgjDkOQQjBFl2w",
+      "artist": "Ben Böhmer",
+      "title": "Beyond Beliefs",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 117,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "2A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 3,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock4889a25c73117e06e264b0",
+        "uri": "spotify:track:mock4889a25c73117e06e264b0",
+        "url": "https://open.spotify.com/track/mock4889a25c73117e06e264b0",
+        "resolvedArtist": "Ben Böhmer",
+        "resolvedTitle": "Beyond Beliefs (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Ben%20B%C3%B6hmer%20Beyond%20Beliefs%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "zzF-_FY6a9wFCTGAy76c2",
+      "artist": "Yotto",
+      "title": "The One You Left Behind",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 118,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "3A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 4,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock11030f2987b0a838a110ef",
+        "uri": "spotify:track:mock11030f2987b0a838a110ef",
+        "url": "https://open.spotify.com/track/mock11030f2987b0a838a110ef",
+        "resolvedArtist": "Yotto",
+        "resolvedTitle": "The One You Left Behind (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Yotto%20The%20One%20You%20Left%20Behind%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "p4nU0tmgRDcZYVBnnwieU",
+      "artist": "Tinlicker",
+      "title": "Because You Move Me",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 119,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "4B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 4,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock6440d7b11bf8a44eeeb7ad",
+        "uri": "spotify:track:mock6440d7b11bf8a44eeeb7ad",
+        "url": "https://open.spotify.com/track/mock6440d7b11bf8a44eeeb7ad",
+        "resolvedArtist": "Tinlicker",
+        "resolvedTitle": "Because You Move Me (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Tinlicker%20Because%20You%20Move%20Me%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "w8kVGFVrrk7PyNVvYrgvR",
+      "artist": "&ME",
+      "title": "As If",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 120,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "5A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 4,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock90dba1324ac7c1370a3bcf",
+        "uri": "spotify:track:mock90dba1324ac7c1370a3bcf",
+        "url": "https://open.spotify.com/track/mock90dba1324ac7c1370a3bcf",
+        "resolvedArtist": "&ME",
+        "resolvedTitle": "As If (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%26ME%20As%20If%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "3Dx2vx1ZqmUsY9F6CxguG",
+      "artist": "Adriatique",
+      "title": "Home",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 121,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "6A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 4,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "opener",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock9e9c5184cbe837b8919a2e",
+        "uri": "spotify:track:mock9e9c5184cbe837b8919a2e",
+        "url": "https://open.spotify.com/track/mock9e9c5184cbe837b8919a2e",
+        "resolvedArtist": "Adriatique",
+        "resolvedTitle": "Home (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Adriatique%20Home%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "eNjsLA6nLIDHM6T0rztEU",
+      "artist": "Lane 8",
+      "title": "Fingerprint",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 119,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "9A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 5,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockea0a359fd4cbcb2635af1a",
+        "uri": "spotify:track:mockea0a359fd4cbcb2635af1a",
+        "url": "https://open.spotify.com/track/mockea0a359fd4cbcb2635af1a",
+        "resolvedArtist": "Lane 8",
+        "resolvedTitle": "Fingerprint (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Lane%208%20Fingerprint%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "rSPvgzXo6JSQYM-sQ65D1",
+      "artist": "Ben Böhmer",
+      "title": "Breathing",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 120,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "9A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 5,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock4b99b7e807137478ea3d9f",
+        "uri": "spotify:track:mock4b99b7e807137478ea3d9f",
+        "url": "https://open.spotify.com/track/mock4b99b7e807137478ea3d9f",
+        "resolvedArtist": "Ben Böhmer",
+        "resolvedTitle": "Breathing (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Ben%20B%C3%B6hmer%20Breathing%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "dWlesNIXvuRgymltFUCkn",
+      "artist": "Yotto",
+      "title": "Walls",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 126,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "1B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 5,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock7c9df8caa13188a1f94104",
+        "uri": "spotify:track:mock7c9df8caa13188a1f94104",
+        "url": "https://open.spotify.com/track/mock7c9df8caa13188a1f94104",
+        "resolvedArtist": "Yotto",
+        "resolvedTitle": "Walls (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Yotto%20Walls%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "Xc2t5Qum5_JinSG9KzRqb",
+      "artist": "Tinlicker",
+      "title": "Children",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 125,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "10B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 5,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockb508945bafbca2f6a0622e",
+        "uri": "spotify:track:mockb508945bafbca2f6a0622e",
+        "url": "https://open.spotify.com/track/mockb508945bafbca2f6a0622e",
+        "resolvedArtist": "Tinlicker",
+        "resolvedTitle": "Children (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Tinlicker%20Children%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "X9gip7USbd1fOQLmG1G_O",
+      "artist": "Marsh",
+      "title": "Lailonie",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 121,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "10A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 6,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock1668e2c67be48a20e626cc",
+        "uri": "spotify:track:mock1668e2c67be48a20e626cc",
+        "url": "https://open.spotify.com/track/mock1668e2c67be48a20e626cc",
+        "resolvedArtist": "Marsh",
+        "resolvedTitle": "Lailonie (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Marsh%20Lailonie%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "uqSrhjH9xI-VY4ri4hDlv",
+      "artist": "Nora En Pure",
+      "title": "Birthright",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 127,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "12A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 6,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockf5284a3f5a6d76ca652bc6",
+        "uri": "spotify:track:mockf5284a3f5a6d76ca652bc6",
+        "url": "https://open.spotify.com/track/mockf5284a3f5a6d76ca652bc6",
+        "resolvedArtist": "Nora En Pure",
+        "resolvedTitle": "Birthright (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Nora%20En%20Pure%20Birthright%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "7SYkumU10qt-9cPm7asQA",
+      "artist": "Sultan + Shepard",
+      "title": "Assassin",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 116,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "1B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 6,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock1ba2b98f2c4cddf94dd4a4",
+        "uri": "spotify:track:mock1ba2b98f2c4cddf94dd4a4",
+        "url": "https://open.spotify.com/track/mock1ba2b98f2c4cddf94dd4a4",
+        "resolvedArtist": "Sultan + Shepard",
+        "resolvedTitle": "Assassin (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Sultan%20%2B%20Shepard%20Assassin%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "xd7zF1-jtK_-xcNnkWOTg",
+      "artist": "Le Youth",
+      "title": "I Will Leave a Light On",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 117,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "2A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 6,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock133f48a62a6d7f296fb514",
+        "uri": "spotify:track:mock133f48a62a6d7f296fb514",
+        "url": "https://open.spotify.com/track/mock133f48a62a6d7f296fb514",
+        "resolvedArtist": "Le Youth",
+        "resolvedTitle": "I Will Leave a Light On (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Le%20Youth%20I%20Will%20Leave%20a%20Light%20On%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "tkICosgDP7f84HrDXnWe_",
+      "artist": "Eli & Fur",
+      "title": "You and I",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 122,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "10B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 7,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockf7ab767113988a69c9cf6c",
+        "uri": "spotify:track:mockf7ab767113988a69c9cf6c",
+        "url": "https://open.spotify.com/track/mockf7ab767113988a69c9cf6c",
+        "resolvedArtist": "Eli & Fur",
+        "resolvedTitle": "You and I (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Eli%20%26%20Fur%20You%20and%20I%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "gPac9Reg5ZRXz8gJBgdA8",
+      "artist": "Jody Wisternoff",
+      "title": "For All Time",
+      "mix": "Extended Mix",
+      "bpm": {
+        "value": 125,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "1A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 7,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock28f225246882a92d63270b",
+        "uri": "spotify:track:mock28f225246882a92d63270b",
+        "url": "https://open.spotify.com/track/mock28f225246882a92d63270b",
+        "resolvedArtist": "Jody Wisternoff",
+        "resolvedTitle": "For All Time (Extended Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Jody%20Wisternoff%20For%20All%20Time%20Extended%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "6etdNjXUBjp4J3LXr5Hau",
+      "artist": "Jerro",
+      "title": "Tunnel Vision",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 120,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "5A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 7,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock1cf9abde6a75958a8b51b9",
+        "uri": "spotify:track:mock1cf9abde6a75958a8b51b9",
+        "url": "https://open.spotify.com/track/mock1cf9abde6a75958a8b51b9",
+        "resolvedArtist": "Jerro",
+        "resolvedTitle": "Tunnel Vision (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Jerro%20Tunnel%20Vision%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "MXPFMsAJkiX-SW9QYQ22r",
+      "artist": "Dosem",
+      "title": "Extraction",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 121,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "6A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 7,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock542ba1bf078e66b13dbf78",
+        "uri": "spotify:track:mock542ba1bf078e66b13dbf78",
+        "url": "https://open.spotify.com/track/mock542ba1bf078e66b13dbf78",
+        "resolvedArtist": "Dosem",
+        "resolvedTitle": "Extraction (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Dosem%20Extraction%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "FvX6_BRg_HPWdpwfSTRRq",
+      "artist": "RÜFÜS DU SOL",
+      "title": "Innerbloom",
+      "mix": "Sasha Remix",
+      "bpm": {
+        "value": 122,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "10A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 8,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "build",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock1801ad83964312dc75a42e",
+        "uri": "spotify:track:mock1801ad83964312dc75a42e",
+        "url": "https://open.spotify.com/track/mock1801ad83964312dc75a42e",
+        "resolvedArtist": "RÜFÜS DU SOL",
+        "resolvedTitle": "Innerbloom (Sasha Remix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=R%C3%9CF%C3%9CS%20DU%20SOL%20Innerbloom%20Sasha%20Remix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "oKW1e72_2qntLj4pfm4ms",
+      "artist": "Kölsch",
+      "title": "Grey",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 123,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "8A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 8,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "peak",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock73f053555ab93506084894",
+        "uri": "spotify:track:mock73f053555ab93506084894",
+        "url": "https://open.spotify.com/track/mock73f053555ab93506084894",
+        "resolvedArtist": "Kölsch",
+        "resolvedTitle": "Grey (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=K%C3%B6lsch%20Grey%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "JjzPZsms3howFyAO8oSV6",
+      "artist": "ARTBAT",
+      "title": "Upperground",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 124,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "9A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 8,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "peak",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockee6c10a96e08ba19c995ce",
+        "uri": "spotify:track:mockee6c10a96e08ba19c995ce",
+        "url": "https://open.spotify.com/track/mockee6c10a96e08ba19c995ce",
+        "resolvedArtist": "ARTBAT",
+        "resolvedTitle": "Upperground (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=ARTBAT%20Upperground%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "6OhnpvuoRYGGC1KWz5h8w",
+      "artist": "CamelPhat",
+      "title": "Constellations",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 125,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "10B",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 8,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "peak",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mock65bf0d65eaea7850d94a31",
+        "uri": "spotify:track:mock65bf0d65eaea7850d94a31",
+        "url": "https://open.spotify.com/track/mock65bf0d65eaea7850d94a31",
+        "resolvedArtist": "CamelPhat",
+        "resolvedTitle": "Constellations (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=CamelPhat%20Constellations%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "00rM3_b6iN2XLevEo62x8",
+      "artist": "WhoMadeWho",
+      "title": "Abu Simbel",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 123,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "11A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 9,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "driving"
+      ],
+      "slotHint": "peak",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockcd55812b542bea4524b0f8",
+        "uri": "spotify:track:mockcd55812b542bea4524b0f8",
+        "url": "https://open.spotify.com/track/mockcd55812b542bea4524b0f8",
+        "resolvedArtist": "WhoMadeWho",
+        "resolvedTitle": "Abu Simbel (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=WhoMadeWho%20Abu%20Simbel%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    },
+    {
+      "id": "l6YOT1d_1pveMPghu1q2t",
+      "artist": "Mind Against",
+      "title": "Walking Away",
+      "mix": "Original Mix",
+      "bpm": {
+        "value": 124,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "key": {
+        "value": "12A",
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "energy": {
+        "value": 9,
+        "source": "brain-estimate",
+        "status": "estimated"
+      },
+      "durationMs": {
+        "value": 360000,
+        "source": "spotify",
+        "status": "verified"
+      },
+      "moodTags": [
+        "melodic",
+        "deep"
+      ],
+      "slotHint": "peak",
+      "whyItBelongs": "Sits naturally in the arc and shares the melodic language of its neighbors.",
+      "resolution": "resolved",
+      "spotify": {
+        "trackId": "mockc20d7b4c79cb9f39df0e98",
+        "uri": "spotify:track:mockc20d7b4c79cb9f39df0e98",
+        "url": "https://open.spotify.com/track/mockc20d7b4c79cb9f39df0e98",
+        "resolvedArtist": "Mind Against",
+        "resolvedTitle": "Walking Away (Original Mix)",
+        "albumArtUrl": null,
+        "durationMs": 360000,
+        "matchQuality": "exact-mix"
+      },
+      "youtubeUrl": "https://www.youtube.com/results?search_query=Mind%20Against%20Walking%20Away%20Original%20Mix",
+      "localFile": null,
+      "replaces": null
+    }
+  ],
+  "options": [
+    {
+      "id": "A",
+      "label": "On-curve journey",
+      "rationale": "Traces the target arc as closely as the pool allows.",
+      "trackIds": [
+        "h4ptGBuMSkL2BkujueVnX",
+        "eNjsLA6nLIDHM6T0rztEU",
+        "rSPvgzXo6JSQYM-sQ65D1",
+        "X9gip7USbd1fOQLmG1G_O",
+        "tkICosgDP7f84HrDXnWe_",
+        "FvX6_BRg_HPWdpwfSTRRq",
+        "00rM3_b6iN2XLevEo62x8",
+        "l6YOT1d_1pveMPghu1q2t",
+        "gPac9Reg5ZRXz8gJBgdA8",
+        "dWlesNIXvuRgymltFUCkn"
+      ],
+      "transitions": [
+        {
+          "fromTrackId": "h4ptGBuMSkL2BkujueVnX",
+          "toTrackId": "eNjsLA6nLIDHM6T0rztEU",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "8A→9A",
+          "bpmDeltaPercent": 0.847457627118644,
+          "bpmRead": "straight",
+          "energyStep": 2,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "eNjsLA6nLIDHM6T0rztEU",
+          "toTrackId": "rSPvgzXo6JSQYM-sQ65D1",
+          "keyRelation": "same",
+          "camelotPath": "9A→9A",
+          "bpmDeltaPercent": 0.8403361344537815,
+          "bpmRead": "straight",
+          "energyStep": 0,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "rSPvgzXo6JSQYM-sQ65D1",
+          "toTrackId": "X9gip7USbd1fOQLmG1G_O",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "9A→10A",
+          "bpmDeltaPercent": 0.8333333333333334,
+          "bpmRead": "straight",
+          "energyStep": 1,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "X9gip7USbd1fOQLmG1G_O",
+          "toTrackId": "tkICosgDP7f84HrDXnWe_",
+          "keyRelation": "relative",
+          "camelotPath": "10A→10B",
+          "bpmDeltaPercent": 0.8264462809917356,
+          "bpmRead": "straight",
+          "energyStep": 1,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "tkICosgDP7f84HrDXnWe_",
+          "toTrackId": "FvX6_BRg_HPWdpwfSTRRq",
+          "keyRelation": "relative",
+          "camelotPath": "10B→10A",
+          "bpmDeltaPercent": 0,
+          "bpmRead": "straight",
+          "energyStep": 1,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "FvX6_BRg_HPWdpwfSTRRq",
+          "toTrackId": "00rM3_b6iN2XLevEo62x8",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "10A→11A",
+          "bpmDeltaPercent": 0.819672131147541,
+          "bpmRead": "straight",
+          "energyStep": 1,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "00rM3_b6iN2XLevEo62x8",
+          "toTrackId": "l6YOT1d_1pveMPghu1q2t",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "11A→12A",
+          "bpmDeltaPercent": 0.8130081300813009,
+          "bpmRead": "straight",
+          "energyStep": 0,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "l6YOT1d_1pveMPghu1q2t",
+          "toTrackId": "gPac9Reg5ZRXz8gJBgdA8",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "12A→1A",
+          "bpmDeltaPercent": 0.8064516129032258,
+          "bpmRead": "straight",
+          "energyStep": -2,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "gPac9Reg5ZRXz8gJBgdA8",
+          "toTrackId": "dWlesNIXvuRgymltFUCkn",
+          "keyRelation": "relative",
+          "camelotPath": "1A→1B",
+          "bpmDeltaPercent": 0.8,
+          "bpmRead": "straight",
+          "energyStep": -2,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": []
+        }
+      ],
+      "predictedEnergies": [
+        3,
+        5,
+        5,
+        6,
+        7,
+        8,
+        9,
+        9,
+        7,
+        5
+      ],
+      "curveFit": 0.9569817352532846
+    },
+    {
+      "id": "B",
+      "label": "Wandering path",
+      "rationale": "Same endpoints, more tension in the middle third.",
+      "trackIds": [
+        "h4ptGBuMSkL2BkujueVnX",
+        "rSPvgzXo6JSQYM-sQ65D1",
+        "eNjsLA6nLIDHM6T0rztEU",
+        "tkICosgDP7f84HrDXnWe_",
+        "X9gip7USbd1fOQLmG1G_O",
+        "00rM3_b6iN2XLevEo62x8",
+        "FvX6_BRg_HPWdpwfSTRRq",
+        "gPac9Reg5ZRXz8gJBgdA8",
+        "l6YOT1d_1pveMPghu1q2t",
+        "dWlesNIXvuRgymltFUCkn"
+      ],
+      "transitions": [
+        {
+          "fromTrackId": "h4ptGBuMSkL2BkujueVnX",
+          "toTrackId": "rSPvgzXo6JSQYM-sQ65D1",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "8A→9A",
+          "bpmDeltaPercent": 1.694915254237288,
+          "bpmRead": "straight",
+          "energyStep": 2,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "rSPvgzXo6JSQYM-sQ65D1",
+          "toTrackId": "eNjsLA6nLIDHM6T0rztEU",
+          "keyRelation": "same",
+          "camelotPath": "9A→9A",
+          "bpmDeltaPercent": -0.8333333333333334,
+          "bpmRead": "straight",
+          "energyStep": 0,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "eNjsLA6nLIDHM6T0rztEU",
+          "toTrackId": "tkICosgDP7f84HrDXnWe_",
+          "keyRelation": "diagonal",
+          "camelotPath": "9A→10B",
+          "bpmDeltaPercent": 2.5210084033613445,
+          "bpmRead": "straight",
+          "energyStep": 2,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": [
+            {
+              "rule": "key",
+              "severity": "amber",
+              "message": "diagonal move — workable, mind the overlap"
+            }
+          ]
+        },
+        {
+          "fromTrackId": "tkICosgDP7f84HrDXnWe_",
+          "toTrackId": "X9gip7USbd1fOQLmG1G_O",
+          "keyRelation": "relative",
+          "camelotPath": "10B→10A",
+          "bpmDeltaPercent": -0.819672131147541,
+          "bpmRead": "straight",
+          "energyStep": -1,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "X9gip7USbd1fOQLmG1G_O",
+          "toTrackId": "00rM3_b6iN2XLevEo62x8",
+          "keyRelation": "adjacent-up",
+          "camelotPath": "10A→11A",
+          "bpmDeltaPercent": 1.6528925619834711,
+          "bpmRead": "straight",
+          "energyStep": 3,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "00rM3_b6iN2XLevEo62x8",
+          "toTrackId": "FvX6_BRg_HPWdpwfSTRRq",
+          "keyRelation": "adjacent-down",
+          "camelotPath": "11A→10A",
+          "bpmDeltaPercent": -0.8130081300813009,
+          "bpmRead": "straight",
+          "energyStep": -1,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "FvX6_BRg_HPWdpwfSTRRq",
+          "toTrackId": "gPac9Reg5ZRXz8gJBgdA8",
+          "keyRelation": "clash",
+          "camelotPath": "10A→1A",
+          "bpmDeltaPercent": 2.459016393442623,
+          "bpmRead": "straight",
+          "energyStep": -1,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": [
+            {
+              "rule": "key",
+              "severity": "red",
+              "message": "key clash — cut, don't blend"
+            }
+          ]
+        },
+        {
+          "fromTrackId": "gPac9Reg5ZRXz8gJBgdA8",
+          "toTrackId": "l6YOT1d_1pveMPghu1q2t",
+          "keyRelation": "adjacent-down",
+          "camelotPath": "1A→12A",
+          "bpmDeltaPercent": -0.8,
+          "bpmRead": "straight",
+          "energyStep": 2,
+          "blend": "long-blend",
+          "note": "Long blend across 16 bars; let the pads overlap.",
+          "warnings": []
+        },
+        {
+          "fromTrackId": "l6YOT1d_1pveMPghu1q2t",
+          "toTrackId": "dWlesNIXvuRgymltFUCkn",
+          "keyRelation": "diagonal",
+          "camelotPath": "12A→1B",
+          "bpmDeltaPercent": 1.6129032258064515,
+          "bpmRead": "straight",
+          "energyStep": -4,
+          "blend": "breakdown-swap",
+          "note": "Swap in the breakdown — both tracks strip back here.",
+          "warnings": [
+            {
+              "rule": "key",
+              "severity": "amber",
+              "message": "diagonal move — workable, mind the overlap"
+            }
+          ]
+        }
+      ],
+      "predictedEnergies": [
+        3,
+        5,
+        5,
+        7,
+        6,
+        9,
+        8,
+        7,
+        9,
+        5
+      ],
+      "curveFit": 0.873179970861733
+    }
+  ],
+  "starredTrackIds": [],
+  "spotifyPlaylist": null,
+  "parentSetId": null,
+  "brainAdapterId": "claude-cli"
+}

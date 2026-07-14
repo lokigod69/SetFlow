@@ -1,0 +1,21 @@
+{
+  "brain": {
+    "adapterId": "claude-cli",
+    "anthropicModel": "claude-sonnet-5",
+    "timeoutMs": 240000,
+    "promptOverrides": {}
+  },
+  "spotify": {
+    "redirectUri": "http://127.0.0.1:8321/auth/spotify/callback"
+  },
+  "sources": {
+    "deezer": true,
+    "getSongBpm": true
+  },
+  "defaults": {
+    "constraints": {}
+  },
+  "analyzer": {
+    "url": "http://127.0.0.1:8322"
+  }
+}
