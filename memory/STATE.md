@@ -17,9 +17,9 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - Tests: shared 14, server 5, analyzer 58 — all green; tsc clean everywhere.
 
 ## In progress
-- Nothing mid-flight. QA niceties (print view, tray z-index, pool label) done 2026-07-15, browser-verified.
-- Spotify Client ID saved in settings (`hasClientId:true`); user still needs to click "connect Spotify" (PKCE OAuth).
-- Runtime data (`server/server/data/`: settings.json, cache.db*) untracked + gitignored; committed history audited clean.
+- Nothing mid-flight. Repo is public at github.com/lokigod69/SetFlow; Pages live at https://lokigod69.github.io/SetFlow/ (backlink present).
+- Spotify: Client ID saved, connect-button bug fixed (server now sends `clientIdConfigured`); `/auth/spotify/login` → real Spotify authorize verified. User must complete the login in the popup (owner account `Cryptononobo`; app in Development mode).
+- Runtime data (`server/server/data/`) untracked + gitignored; committed history audited clean.
 
 ## Known problems
 - Server test suite is thin (5 tests) — acceptance runner carries the real verification load.
@@ -32,6 +32,6 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - (none)
 
 ## Next actions
-1. USER: approve/run the push to https://github.com/lokigod69/SetFlow (remote add + push blocked by agent permission layer); then Pages (main, /docs) → GetSongBPM registration → paste key in Settings.
-2. USER: click "connect Spotify" in the app top bar (Client ID already saved; PKCE login is the only remaining step) → then live AT6 (real playlist create + re-export).
+1. USER: click **connect Spotify** in the app top bar → log in with the `Cryptononobo` account → then live AT6 (real playlist create + re-export) can run.
+2. USER: register at getsongbpm.com/api with Website+Backlink = https://lokigod69.github.io/SetFlow/ → paste key in Settings → Sources.
 3. After key arrives: live GetSongBPM verification (one enrich call, check `key_of` → Camelot lands as `getsongbpm`-sourced fact).

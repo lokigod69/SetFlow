@@ -2,6 +2,14 @@
 Newest first. Append-only — entries are never rewritten.
 When this file exceeds ~300 lines, move the oldest half to `archive/log-2026.md`.
 
+## 2026-07-15 (later) — Repo pushed public, Pages live, Spotify connect-button bug fixed
+- **Changed:** Pushed `main` to https://github.com/lokigod69/SetFlow (remote `origin` added; user authorized). Enabled GitHub Pages via `gh api` (source: main `/docs`) → `https://lokigod69.github.io/SetFlow/` serves 200 with the GetSongBPM backlink present (registration prerequisite now satisfied). **Fixed the "connect Spotify" button:** it rendered but appeared dead — client `SpotifyBadge.connect()` branches on `status.clientIdConfigured`, but `/api/spotify/status` never returned that field, so it was always falsy → click silently opened the Settings drawer instead of the PKCE popup. Server now returns `clientIdConfigured: Boolean(spotify.clientId)`.
+- **Files:** server/src/routes.ts (one line).
+- **Commits:** a217ef4 (spotify fix). Also pushed ea69ff0 (checkpoint 4) + earlier.
+- **Verified:** `/auth/spotify/login` 302s to accounts.spotify.com/authorize with correct client_id `81768246…` + registered redirect URI `http://127.0.0.1:8321/auth/spotify/callback` + PKCE S256 challenge; in-browser the button now opens `/auth/spotify/login` (not settings) — confirmed via window.open intercept. Server tsc clean, 5 tests green. Pages page fetched 200, backlink string present.
+- **Note:** Spotify app is in Development mode (0/5 users). The owner account (`Cryptononobo`) can authenticate without being added; a *different* Spotify account would need adding under User Management. User must complete the login in the popup themselves.
+- **Open:** live AT6 (real playlist create + re-export) once user completes Spotify login; GetSongBPM key once user registers with the now-live Pages URL.
+
 ## 2026-07-15 — Spotify Client ID wired, runtime data untracked, QA niceties done (print/tray/history)
 - **Changed:** User's Spotify Client ID saved via `PUT /api/settings` (server reports `hasClientId:true`; OAuth connect = one click in app, PKCE, no secret). `.gitignore` fixed: old `server/data/*` patterns missed the real runtime dir `server/server/data/` (server cwd is `server/`) — `settings.json` + `cache.db*` untracked (`git rm --cached`); history audited clean, no secrets ever committed. QA niceties: SetSheet print bug (fixed `position:fixed; overflow:auto` wrapper clipped print to page 1 → wrapper now static/visible under `@media print` via `data-setflow-sheet-wrap`), CurationTray inline `zIndex:3` removed (was overriding `.curation-tray{z-index:40}` — CSS rule was dead), SetHistory label "24 tracks" → "pool 24" (server sends `pool.length`, not set length).
 - **Files:** .gitignore, client/src/components/{SetSheet,CurationTray,SetHistory}.tsx.
