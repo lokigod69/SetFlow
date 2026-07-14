@@ -17,9 +17,11 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - Tests: shared 14, server 5, analyzer 58 — all green; tsc clean everywhere.
 
 ## In progress
-- Nothing mid-flight. Repo is public at github.com/lokigod69/SetFlow; Pages live at https://lokigod69.github.io/SetFlow/ (backlink present).
-- Spotify: Client ID saved, connect-button bug fixed (server now sends `clientIdConfigured`); `/auth/spotify/login` → real Spotify authorize verified. User must complete the login in the popup (owner account `Cryptononobo`; app in Development mode).
-- Runtime data (`server/server/data/`) untracked + gitignored; committed history audited clean.
+- Repo public (github.com/lokigod69/SetFlow), Pages live (https://lokigod69.github.io/SetFlow/), runtime data untracked (history clean).
+- Spotify FULLY working: connected + token live-verified as real premium account `Cryptononobo` (PH). Connect-button + settings-drawer bugs fixed.
+- GetSongBPM key saved but upstream 401 "inactive" — activates after their crawler verifies the just-live Pages backlink; graceful null fallback confirmed.
+- Adversarial code review running (Codex = server security; Opus subagent = shared/client/analyzer correctness). Verify findings before acting.
+- Analyzer sidecar (:8322) wedged (stale process, /health unresponsive) — optional feature, non-blocking; restart if the analyzer path is needed.
 
 ## Known problems
 - Server test suite is thin (5 tests) — acceptance runner carries the real verification load.
