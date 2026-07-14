@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+*.local
+.env
+.env.*
+!.env.example
+
+# runtime data
+server/data/*.db
+server/data/*.db-journal
+server/data/*.sqlite*
+
+# python
+__pycache__/
+.venv/
+venv/
+*.pyc
+.pytest_cache/
+
+# os / editor
+.DS_Store
+Thumbs.db

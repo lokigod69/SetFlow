@@ -1,0 +1,26 @@
+{
+  "name": "setflow",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SETFLOW — AI DJ Set Architect. Intent in, verified set out.",
+  "workspaces": [
+    "packages/shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "dev:analyzer": "python analyzer/run.py",
+    "build": "npm run build -w packages/shared && npm run build -w server && npm run build -w client",
+    "test": "npm run test -w packages/shared && npm run test -w server && npm run test -w client",
+    "verify": "node verify/run-acceptance.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
