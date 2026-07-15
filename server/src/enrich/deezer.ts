@@ -34,7 +34,7 @@ export async function deezerLookup(
   const none = { bpm: null, durationMs: null };
   try {
     const q = new URLSearchParams({ q: `${artist} ${title}` });
-    const r = await fetch(`https://api.deezer.com/search?${q}`);
+    const r = await fetch(`https://api.deezer.com/search?${q}`, { signal: AbortSignal.timeout(8000) });
     if (!r.ok) return none;
     const j = (await r.json()) as { data?: DeezerHit[] };
     const hits = (j.data ?? []).slice(0, 8);
@@ -44,7 +44,7 @@ export async function deezerLookup(
     if (!best || best.s < 2) return none;
     const durationMs = best.h.duration ? best.h.duration * 1000 : null;
     // bpm lives on the track endpoint, not the search hit
-    const tr = await fetch(`https://api.deezer.com/track/${best.h.id}`);
+    const tr = await fetch(`https://api.deezer.com/track/${best.h.id}`, { signal: AbortSignal.timeout(8000) });
     if (!tr.ok) return { bpm: null, durationMs };
     const track = (await tr.json()) as { bpm?: number; duration?: number };
     return {

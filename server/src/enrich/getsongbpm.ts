@@ -11,12 +11,18 @@ const cleanTitle = (t: string) => t.replace(/\s*[([][^)\]]*[)\]]/g, '').replace(
 // only, then match the artist ourselves — exact first, then substring. No artist match → no data;
 // a wrong track's BPM/key is worse than none.
 export async function getSongBpmLookup(artist: string, title: string, key: string): Promise<{ bpm: number | null; key: string | null }> {
-  const u = new URL('https://api.getsong.co/search/');
-  u.search = new URLSearchParams({ type: 'song', lookup: cleanTitle(title), limit: '30' }).toString();
-  const r = await fetch(u, { headers: { 'X-API-KEY': key } });
-  if (!r.ok) return { bpm: null, key: null };
-  const j = (await r.json()) as { search?: GsbSong[] | { error?: string } };
-  if (!Array.isArray(j.search)) return { bpm: null, key: null }; // no-result shape: {search:{error:"no result"}}
+  const none = { bpm: null, key: null };
+  let j: { search?: GsbSong[] | { error?: string } };
+  try {
+    const u = new URL('https://api.getsong.co/search/');
+    u.search = new URLSearchParams({ type: 'song', lookup: cleanTitle(title), limit: '30' }).toString();
+    const r = await fetch(u, { headers: { 'X-API-KEY': key }, signal: AbortSignal.timeout(8000) });
+    if (!r.ok) return none;
+    j = (await r.json()) as { search?: GsbSong[] | { error?: string } };
+  } catch {
+    return none; // network stall, or a 200 with a non-JSON (Cloudflare interstitial) body — degrade, never fail the set
+  }
+  if (!Array.isArray(j.search)) return none; // no-result shape: {search:{error:"no result"}}
   const want = norm(artist);
   const hit =
     j.search.find((s) => norm(s.artist?.name ?? '') === want) ??

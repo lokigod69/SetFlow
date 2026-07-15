@@ -27,13 +27,23 @@ export const defaultSettings = (): Settings => SettingsSchema.parse({});
 export class SettingsStore {
   constructor(private readonly path = settingsPath) { this.ensure(); }
   private ensure() { mkdirSync(dirname(this.path), { recursive: true }); try { readFileSync(this.path); } catch { this.save(defaultSettings()); } }
-  get(): Settings { try { return SettingsSchema.parse(JSON.parse(readFileSync(this.path, 'utf8'))); } catch { return defaultSettings(); } }
+  get(): Settings {
+    let raw: string;
+    try { raw = readFileSync(this.path, 'utf8'); } catch { return defaultSettings(); } // missing file → defaults
+    try { return SettingsSchema.parse(JSON.parse(raw)); } catch {
+      // Present but invalid: preserve it before anyone save()s defaults over real secrets.
+      try { writeFileSync(`${this.path}.corrupt-${Date.now()}.bak`, raw); } catch { /* best effort */ }
+      return defaultSettings();
+    }
+  }
   save(value: Settings) { writeFileSync(this.path, JSON.stringify(SettingsSchema.parse(value), null, 2)); }
   update(value: Partial<Settings>): Settings {
     const current = this.get();
     const merged = {
       ...current, ...value,
-      brain: { ...current.brain, ...value.brain }, spotify: { ...current.spotify, ...value.spotify, tokens: value.spotify?.tokens ?? current.spotify.tokens },
+      // tokens: an explicit `tokens` key (even undefined) wins — that's how disconnect clears them;
+      // a patch that omits `spotify.tokens` entirely keeps the stored ones.
+      brain: { ...current.brain, ...value.brain }, spotify: { ...current.spotify, ...value.spotify, tokens: value.spotify && 'tokens' in value.spotify ? value.spotify.tokens : current.spotify.tokens },
       sources: { ...current.sources, ...value.sources }, defaults: { ...current.defaults, ...value.defaults, constraints: { ...current.defaults.constraints, ...value.defaults?.constraints } },
       analyzer: { ...current.analyzer, ...value.analyzer },
     };
