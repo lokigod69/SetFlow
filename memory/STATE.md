@@ -1,5 +1,5 @@
 # Current State
-Last updated: 2026-07-15 (session 3 — Client ID wired, repo hygiene, QA niceties)
+Last updated: 2026-07-16 (session 3d — adversarial review complete, 10 fixes landed)
 
 ## What this is
 AI DJ Set Architect: intent → verified, ordered tracklist with an editable energy arc, Spotify playlist export, five swappable themes. Spec: `setflow-spec.md`. Mode 1 Autopilot, v1-done = spec §10 acceptance tests.
@@ -18,10 +18,10 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 
 ## In progress
 - Repo public (github.com/lokigod69/SetFlow), Pages live (https://lokigod69.github.io/SetFlow/), runtime data untracked (history clean).
-- Spotify FULLY working: connected + token live-verified as real premium account `Cryptononobo` (PH). Connect-button + settings-drawer bugs fixed.
-- GetSongBPM key saved but upstream 401 "inactive" — activates after their crawler verifies the just-live Pages backlink; graceful null fallback confirmed.
-- Adversarial code review running (Codex = server security; Opus subagent = shared/client/analyzer correctness). Verify findings before acting.
-- Analyzer sidecar (:8322) wedged (stale process, /health unresponsive) — optional feature, non-blocking; restart if the analyzer path is needed.
+- Spotify FULLY working: connected + token live-verified as real premium account `Cryptononobo` (PH). Disconnect now really clears tokens (was H1).
+- GetSongBPM key saved but upstream 401 "inactive" — activates after their crawler verifies the Pages backlink; graceful null fallback confirmed.
+- **Adversarial review DONE** (2 rounds, 10 verified fixes: 55d3f50 theory/client, 4a34719 server security). Theory engine, PKCE, redaction, §0 boundary all confirmed clean. Codex detached-task path is unreliable on this machine (dies at session teardown) — use Agent-tool subagents for reviews.
+- Analyzer sidecar (:8322) wedged (stale process, /health unresponsive) — optional feature, non-blocking; restart via desktop launcher if needed.
 
 ## Known problems
 - Server test suite is thin (5 tests) — acceptance runner carries the real verification load.
@@ -34,6 +34,6 @@ AI DJ Set Architect: intent → verified, ordered tracklist with an editable ene
 - (none)
 
 ## Next actions
-1. USER: click **connect Spotify** in the app top bar → log in with the `Cryptononobo` account → then live AT6 (real playlist create + re-export) can run.
-2. USER: register at getsongbpm.com/api with Website+Backlink = https://lokigod69.github.io/SetFlow/ → paste key in Settings → Sources.
-3. After key arrives: live GetSongBPM verification (one enrich call, check `key_of` → Camelot lands as `getsongbpm`-sourced fact).
+1. Live AT6 with the user present (real playlist create + re-export updates same playlist) — Spotify token proven valid, one command away.
+2. Re-check GetSongBPM key activation (probe currently 401 "inactive"; flips when their crawler verifies the backlink), then live-verify one enrich call (`key_of` → Camelot, source `getsongbpm`).
+3. Optional: restart wedged analyzer sidecar (desktop launcher does it) if the local-analysis path is wanted.

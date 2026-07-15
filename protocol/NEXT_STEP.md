@@ -1,15 +1,16 @@
-# NEXT STEP — SETFLOW/main — updated 2026-07-15 (checkpoint 5)
+# NEXT STEP — SETFLOW/main — updated 2026-07-16 (checkpoint 6)
 
 ## FOR YOU
-**Start the app:** double-click **SETFLOW** on your Desktop (or `SetFlow.cmd` in the repo).
+**Nothing blocking.** Spotify is connected and verified; both adversarial reviews are done (10 fixes landed and pushed). Two small optional things:
 
-**1. Connect Spotify — one click (now working):** the connect button was silently broken (it opened Settings instead of the login popup); fixed. In the SetFlow app top bar — the pill labeled **connect Spotify**, left of "history"/"settings" — click it, then log in in the popup with your **Cryptononobo** Spotify account (the one that owns the app) and approve. Your app is in Development mode, so only that account (or up to 5 you add under User Management on Spotify's dashboard) can log in — the owner is always allowed. That's the only step; once connected I can run the real-playlist test.
+1. **Real-playlist test (2 min, do it with me):** with the app open, paste the resume block below and say "run live AT6" — I'll create a real playlist in your Spotify from a set and verify re-export updates the same playlist. (I deliberately don't do this without you present since it writes to your account.)
+2. **GetSongBPM key:** already saved in Settings, but their side reports it "inactive" until their crawler verifies your backlink page (it's live). Nothing to do — if a confirmation email arrives, just tell me; otherwise I re-probe next session.
 
-**2. GetSongBPM key (page is live now):** your backlink page is up at `https://lokigod69.github.io/SetFlow/`. At getsongbpm.com/api fill **Website URL** and **Backlink URL** both = that URL, **Email** = yours. Key arrives by email → SETFLOW Settings → Sources → paste → save. Don't take the Pages site down afterward (they suspend keys whose backlink disappears).
+**If the app isn't running:** double-click **SETFLOW** on your Desktop.
 
 ## PASTE THIS
 Resume SETFLOW/main under protocol-os.
 Read protocol/PROTOCOL.md and this file, plus memory/INDEX.md and memory/STATE.md.
-Verify: `npm run verify` in D:\CODING\SetFlow — expect 8 PASS + 2 PARTIAL (live-flag variants already proven; see verify/EVIDENCE.md).
-Then per memory/STATE.md → Next actions: if Spotify is connected, run live AT6 (real playlist create + re-export, then re-export updates the same playlist); if a GetSongBPM key was pasted, live-verify one enrich call (key_of → Camelot, source `getsongbpm`). Repo is public at github.com/lokigod69/SetFlow, Pages live. Mode 1.
+Verify: `npm run verify` in D:\CODING\SetFlow — expect 8 PASS + 2 PARTIAL (live-flag variants already proven; see verify/EVIDENCE.md). Note: free port 8321 first if a dev server is running (the runner spawns its own mock server).
+Then per memory/STATE.md → Next actions: live AT6 if the user is present (real playlist create + re-export); re-probe the GetSongBPM key (expect 401 until their crawler verifies the backlink — flip to live-verify one enrich call when active). Adversarial review is DONE (10 fixes, commits 55d3f50 + 4a34719) — don't re-run it. Use Agent-tool subagents for any review work, never detached Codex background tasks (they die at session teardown on this machine). Mode 1.
 Work in long runs; checkpoint and Status Block only per protocol-os Iron Rules.

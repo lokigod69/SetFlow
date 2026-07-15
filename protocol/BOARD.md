@@ -1,17 +1,16 @@
-# BOARD — SETFLOW — updated 2026-07-15 (checkpoint 5)
+# BOARD — SETFLOW — updated 2026-07-16 (checkpoint 6)
 
 ## ⚠️ WAITING ON YOU
-- Click **connect Spotify** in the app top bar, log in with the Cryptononobo account (bug fixed — it now launches the login popup).
-- Register at getsongbpm.com/api using the live backlink https://lokigod69.github.io/SetFlow/ → paste key in Settings → Sources.
+- Nothing blocking. Optional: be present for live AT6 (real Spotify playlist test — say "run live AT6"); mention if GetSongBPM emails a key-activation confirmation.
 
 ## Workstreams
 | Workstream | Phase/Gate | Last done | Next | State |
 |---|---|---|---|---|
-| main | Live gates open, awaiting user auth | Repo public + Pages live; Spotify connect-button bug fixed & OAuth chain verified | Live AT6 once Spotify connected; live GetSongBPM check once key arrives | 🟢 active |
+| main | Hardened, awaiting live AT6 + GSB activation | Adversarial review complete: 10 verified fixes (theory/client + server security) | Live AT6 with user; GSB key re-probe | 🟢 active |
 
 ## Recently finished (last 5)
-- 2026-07-15 Fixed "connect Spotify" button (server was missing clientIdConfigured; OAuth 302 chain verified) (a217ef4)
-- 2026-07-15 Pushed repo public → github.com/lokigod69/SetFlow; GitHub Pages enabled + live (backlink present)
-- 2026-07-15 QA niceties: set-sheet print fix, tray z-index 40, history "pool 24" (a5728d7)
-- 2026-07-15 Runtime data untracked + .gitignore path fix; history audited clean (7686d39)
-- 2026-07-15 Spotify Client ID saved via live settings API
+- 2026-07-16 Server security round: disconnect token-wipe, fetch timeouts everywhere, GSB parse guard, settings corrupt-file backup, PKCE session TTL, swap schema, postMessage removal (4a34719)
+- 2026-07-15 Theory/client round: store races (setSeq/starSeq), toggleStar rollback, unknown-BPM-as-perfect-match (55d3f50)
+- 2026-07-15 Settings-drawer blank bug (analyzer proxy timeout + resilient load) (99be52a)
+- 2026-07-15 Spotify connect verified end-to-end as real account; GetSongBPM key saved (inactive upstream)
+- 2026-07-15 Repo public + Pages live with GetSongBPM backlink
