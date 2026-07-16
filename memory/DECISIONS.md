@@ -42,3 +42,23 @@ Wrong turns are part of the memory.
 
 ## 2026-07-15 — Runtime data is never committed
 `server/server/data/` (settings.json with API keys, cache.db*) is untracked and gitignored. The old ignore patterns targeted `server/data/*` but the server cwd is `server/`, so runtime data lands one level deeper — anything secret-bearing must be verified against the REAL runtime path, not the path the code appears to name. History was audited before the public push: no secrets ever committed.
+
+## 2026-07-17 — Brain CLI adapters: neutral cwd + prompt via stdin
+**Status:** active
+**Decision:** `claudeCli`/`codexCli` adapters always run from `os.tmpdir()` and pass the prompt on stdin, never argv.
+**Why:** Run from the repo, `claude -p` walks up, loads SETFLOW's own CLAUDE.md and answers as a protocol-os project session instead of as the DJ brain (observed verbatim). On Windows, the `cmd /c claude.cmd` fallback mangles `&` in argv (track names like "Antdot & Maz") and command lines cap at ~8k chars; stdin is immune to both. Applies to any future CLI adapter.
+
+## 2026-07-17 — Spotify: resolve via query cascade; playlist create via /me/playlists
+**Status:** active
+**Decision:** resolveTrack tries `track:+artist:+mix` → `track:+artist:` → plain free text, first non-empty wins; playlist creation uses `POST /me/playlists`.
+**Why:** Brains label nearly everything "Original/Extended Mix" — a mix-qualified query returns ZERO items when the canonical Spotify title lacks the suffix (live resolution was 5/22; cascade → ~20-22/24). Legacy `POST /users/{id}/playlists` returns bare 403 for newer Spotify apps even with `playlist-modify-private` granted; `/me/playlists` works (probe-verified 201).
+
+## 2026-07-17 — LLM-facing schema seams get a normalizer, not just a stricter prompt
+**Status:** active
+**Decision:** Brain replace outputs pass through `normalizeReplacements` (z.preprocess) that adapts common shape drift (flattened track fields, `resolved`/`tracks` wrappers, `index`/`reason` keys) before zod; missing estimates get neutral priors since the pipeline verifies against real data anyway. Prompt examples stay strict; the parser stays forgiving.
+**Why:** Even with an exact JSON example and "EXACTLY two keys" instructions, the CLI model drifted 2/3 attempts. The repair round costs a full second brain call (~1-2 min); normalizing is free and deterministic.
+
+## 2026-07-17 — Verify runs are data-isolated (SETFLOW_DATA_DIR)
+**Status:** active
+**Decision:** `config.ts` + `cache/db.ts` honor `SETFLOW_DATA_DIR`; the acceptance runner sets it to `verify/.data` (wiped per run, gitignored).
+**Why:** Verify runs shared the real app DB and dumped 52 mock sets into the user's visible history. Isolation also makes runs deterministic (no cache bleed between mock and live).

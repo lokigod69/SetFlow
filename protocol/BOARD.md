@@ -1,16 +1,16 @@
-# BOARD — SETFLOW — updated 2026-07-16 (checkpoint 6)
+# BOARD — SETFLOW — updated 2026-07-17 (checkpoint 7)
 
 ## ⚠️ WAITING ON YOU
-- Nothing blocking. Optional: be present for live AT6 (real Spotify playlist test — say "run live AT6"); mention if GetSongBPM emails a key-activation confirmation.
+- Listening test: architect a set, export, actually mix/listen — the one acceptance no machine can run. Also: mention if GetSongBPM emails a key-activation confirmation.
 
 ## Workstreams
 | Workstream | Phase/Gate | Last done | Next | State |
 |---|---|---|---|---|
-| main | Hardened, awaiting live AT6 + GSB activation | Adversarial review complete: 10 verified fixes (theory/client + server security) | Live AT6 with user; GSB key re-probe | 🟢 active |
+| main | Live-verified end-to-end; awaiting listen test + GSB activation | AT6 LIVE PASS + 4 live-pipeline fixes + hero layout (2e58df5) | User listening feedback → prompt tuning; GSB re-probe | 🟢 active |
 
 ## Recently finished (last 5)
+- 2026-07-17 AT6 LIVE PASS: real playlist created + re-export same id; resolve cascade (5/22→20/24), /me/playlists fix, replace pass wired + verified, CLI adapters neutral-cwd + stdin (2e58df5)
+- 2026-07-17 Hero layout: empty state centered composer, all themes; controls-row rebuilt (2e58df5)
+- 2026-07-17 Verify isolation (SETFLOW_DATA_DIR) + purged 52 mock sets from user history (2e58df5)
 - 2026-07-16 Server security round: disconnect token-wipe, fetch timeouts everywhere, GSB parse guard, settings corrupt-file backup, PKCE session TTL, swap schema, postMessage removal (4a34719)
 - 2026-07-15 Theory/client round: store races (setSeq/starSeq), toggleStar rollback, unknown-BPM-as-perfect-match (55d3f50)
-- 2026-07-15 Settings-drawer blank bug (analyzer proxy timeout + resilient load) (99be52a)
-- 2026-07-15 Spotify connect verified end-to-end as real account; GetSongBPM key saved (inactive upstream)
-- 2026-07-15 Repo public + Pages live with GetSongBPM backlink
