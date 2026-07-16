@@ -1,8 +1,8 @@
 {
-  "id": "KQla0L04KIuWjeBdwoWYC",
+  "id": "2U7iSxhASQbKrNAIendpp",
   "name": "golden hour brazil beach party",
-  "createdAt": "2026-07-14T15:47:25.521Z",
-  "updatedAt": "2026-07-14T15:47:25.524Z",
+  "createdAt": "2026-07-16T16:34:02.000Z",
+  "updatedAt": "2026-07-16T16:34:02.506Z",
   "intent": {
     "mode": "vibe",
     "vibeText": "golden hour brazil beach party"
@@ -44,7 +44,7 @@
   ],
   "pool": [
     {
-      "id": "tQZjrTw2nUuUH5F8R32WE",
+      "id": "AWnOjxDFPPzwAfaCYvGSk",
       "artist": "Lane 8",
       "title": "Atlas",
       "mix": "Extended Mix",
@@ -90,7 +90,7 @@
       "replaces": null
     },
     {
-      "id": "DCp_Bl0M3vlwVoOXEi6jK",
+      "id": "ckiCVXmyaE1RUUFuvpeRo",
       "artist": "Ben Böhmer",
       "title": "Beyond Beliefs",
       "mix": "Extended Mix",
@@ -136,14 +136,14 @@
       "replaces": null
     },
     {
-      "id": "wOVGu0Mb8kNlp2YdnIQil",
+      "id": "ifncaRNRhCN-LpvstqwxJ",
       "artist": "Yotto",
       "title": "The One You Left Behind",
       "mix": "Original Mix",
       "bpm": {
-        "value": 118,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 124.16,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "8A",
@@ -182,14 +182,14 @@
       "replaces": null
     },
     {
-      "id": "-wA3o1hV9_rnSwtNeSlUc",
+      "id": "gUPH0KDN99Iytne6Qol2M",
       "artist": "Tinlicker",
       "title": "Because You Move Me",
       "mix": "Extended Mix",
       "bpm": {
-        "value": 119,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 123.05,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "4B",
@@ -228,7 +228,7 @@
       "replaces": null
     },
     {
-      "id": "JbrEGRRViophxQiwWAHPf",
+      "id": "0-mMIkUdJoK_LjO-A4DAn",
       "artist": "&ME",
       "title": "As If",
       "mix": "Original Mix",
@@ -274,7 +274,7 @@
       "replaces": null
     },
     {
-      "id": "PWFNd_NT2eWp55KqX69xk",
+      "id": "HznG1NHaVS3kwm0VW9lHd",
       "artist": "Adriatique",
       "title": "Home",
       "mix": "Original Mix",
@@ -320,7 +320,7 @@
       "replaces": null
     },
     {
-      "id": "aHHhO7mrD1qB1XAENSIlW",
+      "id": "xz4MOze_yTFXY2obk9hqO",
       "artist": "Lane 8",
       "title": "Fingerprint",
       "mix": "Extended Mix",
@@ -366,7 +366,7 @@
       "replaces": null
     },
     {
-      "id": "HBZpsUFtSe5LJ42YlHBcZ",
+      "id": "bneyfoVQOMoJ22OMa4Ir7",
       "artist": "Ben Böhmer",
       "title": "Breathing",
       "mix": "Extended Mix",
@@ -412,14 +412,14 @@
       "replaces": null
     },
     {
-      "id": "bfNwb5_IZ-lYOEbPrQvqf",
+      "id": "x58gTE2CKqeK0jlLirBfa",
       "artist": "Yotto",
       "title": "Walls",
       "mix": "Original Mix",
       "bpm": {
-        "value": 126,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 123.05,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "1B",
@@ -458,7 +458,7 @@
       "replaces": null
     },
     {
-      "id": "gYrcub1GJHXxJTkATPGac",
+      "id": "ffKpHWmVSKyJCV1dNgR3L",
       "artist": "Tinlicker",
       "title": "Children",
       "mix": "Extended Mix",
@@ -504,7 +504,7 @@
       "replaces": null
     },
     {
-      "id": "wvEPOvNSpqGVb2tFfcrmQ",
+      "id": "dYJs_Rn855scfhZ3x_be_",
       "artist": "Marsh",
       "title": "Lailonie",
       "mix": "Original Mix",
@@ -550,7 +550,7 @@
       "replaces": null
     },
     {
-      "id": "5Acgw2WQEPBCw4kGVGvhn",
+      "id": "GiZ50xrf65jFr6c47xXLg",
       "artist": "Nora En Pure",
       "title": "Birthright",
       "mix": "Extended Mix",
@@ -596,7 +596,7 @@
       "replaces": null
     },
     {
-      "id": "GVXKXzxhpUtU-tmoOy8Z1",
+      "id": "mOnhf3AcxuexXzSkV4qM1",
       "artist": "Sultan + Shepard",
       "title": "Assassin",
       "mix": "Extended Mix",
@@ -642,7 +642,7 @@
       "replaces": null
     },
     {
-      "id": "RG6nEPEMInPt5wdzkxK2k",
+      "id": "JaeT7dR5ff32WPMioUqXO",
       "artist": "Le Youth",
       "title": "I Will Leave a Light On",
       "mix": "Extended Mix",
@@ -688,7 +688,7 @@
       "replaces": null
     },
     {
-      "id": "aMNHnHBRGJNXDGN0WgZt6",
+      "id": "dAqa9f__JlXGobilMtVlO",
       "artist": "Eli & Fur",
       "title": "You and I",
       "mix": "Original Mix",
@@ -734,14 +734,14 @@
       "replaces": null
     },
     {
-      "id": "6kA7-zlGQGgSvvwHD5Jo6",
+      "id": "Q1QAgPDVSveqsyzIm6yL4",
       "artist": "Jody Wisternoff",
       "title": "For All Time",
       "mix": "Extended Mix",
       "bpm": {
-        "value": 125,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 120.19,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "1A",
@@ -780,7 +780,7 @@
       "replaces": null
     },
     {
-      "id": "19MG1LO_VDJCRqq0ChMnV",
+      "id": "THF8J9vS7N0KKRUl1LX1g",
       "artist": "Jerro",
       "title": "Tunnel Vision",
       "mix": "Original Mix",
@@ -826,7 +826,7 @@
       "replaces": null
     },
     {
-      "id": "aPbXJsCtN6nmpHF5YNgsB",
+      "id": "SXNbUHQqgI7ahxaz5iCzc",
       "artist": "Dosem",
       "title": "Extraction",
       "mix": "Original Mix",
@@ -872,14 +872,14 @@
       "replaces": null
     },
     {
-      "id": "S_UlPSyQzfkwJuvOfZHcC",
+      "id": "sNywHb9L6nH4OPX5lX4TE",
       "artist": "RÜFÜS DU SOL",
       "title": "Innerbloom",
       "mix": "Sasha Remix",
       "bpm": {
-        "value": 122,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 121.96,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "10A",
@@ -918,7 +918,7 @@
       "replaces": null
     },
     {
-      "id": "LjGw_Or6WNJunuUjo-mOb",
+      "id": "yajCpMUBsexCkdtIbmAdC",
       "artist": "Kölsch",
       "title": "Grey",
       "mix": "Original Mix",
@@ -964,7 +964,7 @@
       "replaces": null
     },
     {
-      "id": "0Ds1kp8WAYS3rIoNQGPOz",
+      "id": "8GNsXLCny-Qo38w89VgqQ",
       "artist": "ARTBAT",
       "title": "Upperground",
       "mix": "Original Mix",
@@ -1010,14 +1010,14 @@
       "replaces": null
     },
     {
-      "id": "RNlmglyeLPftfNf2AYZzb",
+      "id": "-qndgsEXVf9cFu0zffR_5",
       "artist": "CamelPhat",
       "title": "Constellations",
       "mix": "Original Mix",
       "bpm": {
-        "value": 125,
-        "source": "brain-estimate",
-        "status": "estimated"
+        "value": 121.96,
+        "source": "deezer",
+        "status": "verified"
       },
       "key": {
         "value": "10B",
@@ -1056,7 +1056,7 @@
       "replaces": null
     },
     {
-      "id": "fZVXwT46UpVP-_3pN6Eaq",
+      "id": "h5DPj3b4eWp2D4MjXhgJI",
       "artist": "WhoMadeWho",
       "title": "Abu Simbel",
       "mix": "Original Mix",
@@ -1102,7 +1102,7 @@
       "replaces": null
     },
     {
-      "id": "Dg2AyusgAUhM4GwuJxcSL",
+      "id": "Q72-gHnwiJeIDVLqpN8P2",
       "artist": "Mind Against",
       "title": "Walking Away",
       "mix": "Original Mix",
@@ -1154,24 +1154,24 @@
       "label": "On-curve journey",
       "rationale": "Traces the target arc as closely as the pool allows.",
       "trackIds": [
-        "wOVGu0Mb8kNlp2YdnIQil",
-        "aHHhO7mrD1qB1XAENSIlW",
-        "HBZpsUFtSe5LJ42YlHBcZ",
-        "wvEPOvNSpqGVb2tFfcrmQ",
-        "aMNHnHBRGJNXDGN0WgZt6",
-        "S_UlPSyQzfkwJuvOfZHcC",
-        "fZVXwT46UpVP-_3pN6Eaq",
-        "Dg2AyusgAUhM4GwuJxcSL",
-        "6kA7-zlGQGgSvvwHD5Jo6",
-        "bfNwb5_IZ-lYOEbPrQvqf"
+        "ifncaRNRhCN-LpvstqwxJ",
+        "xz4MOze_yTFXY2obk9hqO",
+        "bneyfoVQOMoJ22OMa4Ir7",
+        "dYJs_Rn855scfhZ3x_be_",
+        "dAqa9f__JlXGobilMtVlO",
+        "sNywHb9L6nH4OPX5lX4TE",
+        "h5DPj3b4eWp2D4MjXhgJI",
+        "Q72-gHnwiJeIDVLqpN8P2",
+        "Q1QAgPDVSveqsyzIm6yL4",
+        "x58gTE2CKqeK0jlLirBfa"
       ],
       "transitions": [
         {
-          "fromTrackId": "wOVGu0Mb8kNlp2YdnIQil",
-          "toTrackId": "aHHhO7mrD1qB1XAENSIlW",
+          "fromTrackId": "ifncaRNRhCN-LpvstqwxJ",
+          "toTrackId": "xz4MOze_yTFXY2obk9hqO",
           "keyRelation": "adjacent-up",
           "camelotPath": "8A→9A",
-          "bpmDeltaPercent": 0.847457627118644,
+          "bpmDeltaPercent": -4.155927835051544,
           "bpmRead": "straight",
           "energyStep": 1,
           "blend": "long-blend",
@@ -1179,8 +1179,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "aHHhO7mrD1qB1XAENSIlW",
-          "toTrackId": "HBZpsUFtSe5LJ42YlHBcZ",
+          "fromTrackId": "xz4MOze_yTFXY2obk9hqO",
+          "toTrackId": "bneyfoVQOMoJ22OMa4Ir7",
           "keyRelation": "same",
           "camelotPath": "9A→9A",
           "bpmDeltaPercent": 0.8403361344537815,
@@ -1191,8 +1191,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "HBZpsUFtSe5LJ42YlHBcZ",
-          "toTrackId": "wvEPOvNSpqGVb2tFfcrmQ",
+          "fromTrackId": "bneyfoVQOMoJ22OMa4Ir7",
+          "toTrackId": "dYJs_Rn855scfhZ3x_be_",
           "keyRelation": "adjacent-up",
           "camelotPath": "9A→10A",
           "bpmDeltaPercent": 0.8333333333333334,
@@ -1203,8 +1203,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "wvEPOvNSpqGVb2tFfcrmQ",
-          "toTrackId": "aMNHnHBRGJNXDGN0WgZt6",
+          "fromTrackId": "dYJs_Rn855scfhZ3x_be_",
+          "toTrackId": "dAqa9f__JlXGobilMtVlO",
           "keyRelation": "relative",
           "camelotPath": "10A→10B",
           "bpmDeltaPercent": 0.8264462809917356,
@@ -1215,11 +1215,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "aMNHnHBRGJNXDGN0WgZt6",
-          "toTrackId": "S_UlPSyQzfkwJuvOfZHcC",
+          "fromTrackId": "dAqa9f__JlXGobilMtVlO",
+          "toTrackId": "sNywHb9L6nH4OPX5lX4TE",
           "keyRelation": "relative",
           "camelotPath": "10B→10A",
-          "bpmDeltaPercent": 0,
+          "bpmDeltaPercent": -0.03278688524590676,
           "bpmRead": "straight",
           "energyStep": 1,
           "blend": "long-blend",
@@ -1227,11 +1227,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "S_UlPSyQzfkwJuvOfZHcC",
-          "toTrackId": "fZVXwT46UpVP-_3pN6Eaq",
+          "fromTrackId": "sNywHb9L6nH4OPX5lX4TE",
+          "toTrackId": "h5DPj3b4eWp2D4MjXhgJI",
           "keyRelation": "adjacent-up",
           "camelotPath": "10A→11A",
-          "bpmDeltaPercent": 0.819672131147541,
+          "bpmDeltaPercent": 0.8527386028206021,
           "bpmRead": "straight",
           "energyStep": 1,
           "blend": "breakdown-swap",
@@ -1239,8 +1239,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "fZVXwT46UpVP-_3pN6Eaq",
-          "toTrackId": "Dg2AyusgAUhM4GwuJxcSL",
+          "fromTrackId": "h5DPj3b4eWp2D4MjXhgJI",
+          "toTrackId": "Q72-gHnwiJeIDVLqpN8P2",
           "keyRelation": "adjacent-up",
           "camelotPath": "11A→12A",
           "bpmDeltaPercent": 0.8130081300813009,
@@ -1251,11 +1251,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "Dg2AyusgAUhM4GwuJxcSL",
-          "toTrackId": "6kA7-zlGQGgSvvwHD5Jo6",
+          "fromTrackId": "Q72-gHnwiJeIDVLqpN8P2",
+          "toTrackId": "Q1QAgPDVSveqsyzIm6yL4",
           "keyRelation": "adjacent-up",
           "camelotPath": "12A→1A",
-          "bpmDeltaPercent": 0.8064516129032258,
+          "bpmDeltaPercent": -3.0725806451612923,
           "bpmRead": "straight",
           "energyStep": -2,
           "blend": "long-blend",
@@ -1263,11 +1263,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "6kA7-zlGQGgSvvwHD5Jo6",
-          "toTrackId": "bfNwb5_IZ-lYOEbPrQvqf",
+          "fromTrackId": "Q1QAgPDVSveqsyzIm6yL4",
+          "toTrackId": "x58gTE2CKqeK0jlLirBfa",
           "keyRelation": "relative",
           "camelotPath": "1A→1B",
-          "bpmDeltaPercent": 0.8,
+          "bpmDeltaPercent": 2.3795656876612026,
           "bpmRead": "straight",
           "energyStep": -2,
           "blend": "breakdown-swap",
@@ -1294,24 +1294,24 @@
       "label": "Wandering path",
       "rationale": "Same endpoints, more tension in the middle third.",
       "trackIds": [
-        "wOVGu0Mb8kNlp2YdnIQil",
-        "HBZpsUFtSe5LJ42YlHBcZ",
-        "aHHhO7mrD1qB1XAENSIlW",
-        "aMNHnHBRGJNXDGN0WgZt6",
-        "wvEPOvNSpqGVb2tFfcrmQ",
-        "fZVXwT46UpVP-_3pN6Eaq",
-        "S_UlPSyQzfkwJuvOfZHcC",
-        "6kA7-zlGQGgSvvwHD5Jo6",
-        "Dg2AyusgAUhM4GwuJxcSL",
-        "bfNwb5_IZ-lYOEbPrQvqf"
+        "ifncaRNRhCN-LpvstqwxJ",
+        "bneyfoVQOMoJ22OMa4Ir7",
+        "xz4MOze_yTFXY2obk9hqO",
+        "dAqa9f__JlXGobilMtVlO",
+        "dYJs_Rn855scfhZ3x_be_",
+        "h5DPj3b4eWp2D4MjXhgJI",
+        "sNywHb9L6nH4OPX5lX4TE",
+        "Q1QAgPDVSveqsyzIm6yL4",
+        "Q72-gHnwiJeIDVLqpN8P2",
+        "x58gTE2CKqeK0jlLirBfa"
       ],
       "transitions": [
         {
-          "fromTrackId": "wOVGu0Mb8kNlp2YdnIQil",
-          "toTrackId": "HBZpsUFtSe5LJ42YlHBcZ",
+          "fromTrackId": "ifncaRNRhCN-LpvstqwxJ",
+          "toTrackId": "bneyfoVQOMoJ22OMa4Ir7",
           "keyRelation": "adjacent-up",
           "camelotPath": "8A→9A",
-          "bpmDeltaPercent": 1.694915254237288,
+          "bpmDeltaPercent": -3.3505154639175228,
           "bpmRead": "straight",
           "energyStep": 1,
           "blend": "long-blend",
@@ -1319,8 +1319,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "HBZpsUFtSe5LJ42YlHBcZ",
-          "toTrackId": "aHHhO7mrD1qB1XAENSIlW",
+          "fromTrackId": "bneyfoVQOMoJ22OMa4Ir7",
+          "toTrackId": "xz4MOze_yTFXY2obk9hqO",
           "keyRelation": "same",
           "camelotPath": "9A→9A",
           "bpmDeltaPercent": -0.8333333333333334,
@@ -1331,8 +1331,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "aHHhO7mrD1qB1XAENSIlW",
-          "toTrackId": "aMNHnHBRGJNXDGN0WgZt6",
+          "fromTrackId": "xz4MOze_yTFXY2obk9hqO",
+          "toTrackId": "dAqa9f__JlXGobilMtVlO",
           "keyRelation": "diagonal",
           "camelotPath": "9A→10B",
           "bpmDeltaPercent": 2.5210084033613445,
@@ -1349,8 +1349,8 @@
           ]
         },
         {
-          "fromTrackId": "aMNHnHBRGJNXDGN0WgZt6",
-          "toTrackId": "wvEPOvNSpqGVb2tFfcrmQ",
+          "fromTrackId": "dAqa9f__JlXGobilMtVlO",
+          "toTrackId": "dYJs_Rn855scfhZ3x_be_",
           "keyRelation": "relative",
           "camelotPath": "10B→10A",
           "bpmDeltaPercent": -0.819672131147541,
@@ -1361,8 +1361,8 @@
           "warnings": []
         },
         {
-          "fromTrackId": "wvEPOvNSpqGVb2tFfcrmQ",
-          "toTrackId": "fZVXwT46UpVP-_3pN6Eaq",
+          "fromTrackId": "dYJs_Rn855scfhZ3x_be_",
+          "toTrackId": "h5DPj3b4eWp2D4MjXhgJI",
           "keyRelation": "adjacent-up",
           "camelotPath": "10A→11A",
           "bpmDeltaPercent": 1.6528925619834711,
@@ -1373,11 +1373,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "fZVXwT46UpVP-_3pN6Eaq",
-          "toTrackId": "S_UlPSyQzfkwJuvOfZHcC",
+          "fromTrackId": "h5DPj3b4eWp2D4MjXhgJI",
+          "toTrackId": "sNywHb9L6nH4OPX5lX4TE",
           "keyRelation": "adjacent-down",
           "camelotPath": "11A→10A",
-          "bpmDeltaPercent": -0.8130081300813009,
+          "bpmDeltaPercent": -0.8455284552845579,
           "bpmRead": "straight",
           "energyStep": -1,
           "blend": "breakdown-swap",
@@ -1385,11 +1385,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "S_UlPSyQzfkwJuvOfZHcC",
-          "toTrackId": "6kA7-zlGQGgSvvwHD5Jo6",
+          "fromTrackId": "sNywHb9L6nH4OPX5lX4TE",
+          "toTrackId": "Q1QAgPDVSveqsyzIm6yL4",
           "keyRelation": "clash",
           "camelotPath": "10A→1A",
-          "bpmDeltaPercent": 2.459016393442623,
+          "bpmDeltaPercent": -1.4512955067235127,
           "bpmRead": "straight",
           "energyStep": -1,
           "blend": "long-blend",
@@ -1403,11 +1403,11 @@
           ]
         },
         {
-          "fromTrackId": "6kA7-zlGQGgSvvwHD5Jo6",
-          "toTrackId": "Dg2AyusgAUhM4GwuJxcSL",
+          "fromTrackId": "Q1QAgPDVSveqsyzIm6yL4",
+          "toTrackId": "Q72-gHnwiJeIDVLqpN8P2",
           "keyRelation": "adjacent-down",
           "camelotPath": "1A→12A",
-          "bpmDeltaPercent": -0.8,
+          "bpmDeltaPercent": 3.1699808636325835,
           "bpmRead": "straight",
           "energyStep": 2,
           "blend": "long-blend",
@@ -1415,11 +1415,11 @@
           "warnings": []
         },
         {
-          "fromTrackId": "Dg2AyusgAUhM4GwuJxcSL",
-          "toTrackId": "bfNwb5_IZ-lYOEbPrQvqf",
+          "fromTrackId": "Q72-gHnwiJeIDVLqpN8P2",
+          "toTrackId": "x58gTE2CKqeK0jlLirBfa",
           "keyRelation": "diagonal",
           "camelotPath": "12A→1B",
-          "bpmDeltaPercent": 1.6129032258064515,
+          "bpmDeltaPercent": -0.7661290322580668,
           "bpmRead": "straight",
           "energyStep": -4,
           "blend": "breakdown-swap",

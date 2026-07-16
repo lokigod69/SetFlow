@@ -9,6 +9,7 @@ build/
 # runtime data (server writes to server/server/data because its cwd is server/)
 server/data/
 server/server/data/
+verify/.data/
 
 # python
 __pycache__/

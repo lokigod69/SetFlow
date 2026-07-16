@@ -19,3 +19,10 @@
 2026-07-15T | main | Push to github.com/lokigod69/SetFlow blocked by permission layer -> FOR YOU step | evidence: denial in session
 2026-07-15T | main | QA niceties done: print-view page-clip fix (wrapper static in print), tray z-index 40 restored, history "pool 24" label; browser-verified live | evidence: commit, CSSOM print sim + computed styles in session
 2026-07-15T | main | QA niceties done: print-view page-clip fix (wrapper static in print), tray z-index 40 restored, history pool-24 label; browser-verified live | evidence: commit, CSSOM print sim + computed styles in session
+23:07 | GetSongBPM re-probe: HTTP 401 (key still inactive upstream; graceful fallback already verified)
+2026-07-16 | Layout upgrade: hero-centered composer in empty state (App/IntentBar/styles.css), controls-row rebuilt; verified via chrome-devtools screenshots on Horizon + Atelier themes, tsc clean
+2026-07-16 | AT6 LIVE PASS: real playlist 4GavmctOvPASILfpcPPjGD created + re-export same id, persisted; 8 items verified via API readback
+2026-07-16 | Fix: resolve query cascade (mix -> mixless -> plain) — live resolution was 5/22, now 20/24 (mock never caught it)
+2026-07-16 | Fix: playlist create via POST /me/playlists (legacy /users/{id}/playlists 403s for newer Spotify apps despite correct scopes)
+2026-07-16 | Wired replace pass into hydrate (spec AT1 resolved-or-replaced was dead code in live mode); tsc + 5 server tests green
+2026-07-16 | Verify-runner data isolation: SETFLOW_DATA_DIR env + verify/.data; purged 52 mock sets from user history (4 real kept)

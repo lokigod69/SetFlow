@@ -15,13 +15,17 @@
  */
 
 import { spawn } from 'node:child_process';
-import { mkdirSync, writeFileSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, readdirSync, statSync, rmSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ART = join(ROOT, 'verify', 'artifacts');
 mkdirSync(ART, { recursive: true });
+// Isolated data dir so verify runs never pollute the real app's history/settings.
+const DATA = join(ROOT, 'verify', '.data');
+rmSync(DATA, { recursive: true, force: true });
+mkdirSync(DATA, { recursive: true });
 
 const BASE = 'http://127.0.0.1:8321';
 const flags = new Set(process.argv.slice(2));
@@ -67,7 +71,7 @@ async function startServer() {
   serverProc = spawn('npm', ['run', 'dev:server'], {
     cwd: ROOT,
     shell: true,
-    env: { ...process.env, SETFLOW_MOCK: '1' },
+    env: { ...process.env, SETFLOW_MOCK: '1', SETFLOW_DATA_DIR: DATA },
     stdio: ['ignore', 'pipe', 'pipe'],
   });
   let log = '';

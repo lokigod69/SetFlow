@@ -3,7 +3,7 @@ import { dirname, resolve } from 'node:path';
 import { z } from 'zod';
 import { ConstraintsSchema, type Constraints } from '@setflow/shared';
 
-const dataDir = resolve(process.cwd(), 'server/data');
+const dataDir = process.env.SETFLOW_DATA_DIR ?? resolve(process.cwd(), 'server/data');
 const settingsPath = resolve(dataDir, 'settings.json');
 
 const SettingsSchema = z.object({

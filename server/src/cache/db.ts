@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 
 export class CacheDb {
   readonly db: Database.Database;
-  constructor(path = resolve(process.cwd(), 'server/data/cache.db')) {
+  constructor(path = resolve(process.env.SETFLOW_DATA_DIR ?? resolve(process.cwd(), 'server/data'), 'cache.db')) {
     mkdirSync(resolve(path, '..'), { recursive: true }); this.db = new Database(path); this.db.pragma('journal_mode = WAL');
     this.db.exec(`CREATE TABLE IF NOT EXISTS track_cache (spotify_track_id TEXT PRIMARY KEY, metadata TEXT NOT NULL, fetched_at TEXT NOT NULL);
       CREATE TABLE IF NOT EXISTS enrichment_cache (spotify_track_id TEXT NOT NULL, source TEXT NOT NULL, bpm REAL, key TEXT, fetched_at TEXT NOT NULL, PRIMARY KEY(spotify_track_id,source));

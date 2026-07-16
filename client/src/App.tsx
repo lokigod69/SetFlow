@@ -30,12 +30,13 @@ function Shell() {
   }, [refreshHistory]);
 
   const arcMode = draft.mode === 'curve-first' && !doc ? 'draw' : 'predict';
+  const isEmpty = !doc && arcMode !== 'draw';
 
   return (
     <>
       <div className="atmosphere" aria-hidden />
       <DitherBackdrop />
-      <div className="app">
+      <div className={`app${isEmpty ? ' empty' : ''}`}>
         <header className="topbar">
           <span className="wordmark">SETFLOW</span>
           <span className="label">set architect</span>
@@ -47,6 +48,14 @@ function Shell() {
           </button>
           <ThemeSwitcher />
         </header>
+
+        <main className="stage">
+        {isEmpty && (
+          <motion.div className="hero-head" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
+            <h1>Shape the night.</h1>
+            <p>Start with a seed track, a vibe, or a journey — SETFLOW architects the set.</p>
+          </motion.div>
+        )}
 
         <IntentBar />
 
@@ -86,6 +95,7 @@ function Shell() {
         )}
 
         {doc && <CurationTray />}
+        </main>
       </div>
 
       <SettingsDrawer />
