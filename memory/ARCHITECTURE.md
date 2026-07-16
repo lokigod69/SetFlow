@@ -11,7 +11,7 @@ Local-first web app in three processes: a React/Vite client, a Fastify server (A
 | Energy Arc | client/src/arc/ | ArcRenderer adapter interface; default SVG renderer; draw + predict modes |
 | Server | server/ | Fastify + TS; routes: intent, brain, spotify, enrich, validate, export, sets, settings |
 | Brain adapters | server/src/brain/ | BrainAdapter: claude-cli, codex-cli, anthropic-api; strict JSON, one repair retry |
-| Verification | server/src/pipeline/ | resolve → enrich → validate; status per field: estimated / verified / measured |
+| Verification | server/src/pipeline/ | resolve → replace (brain swaps unresolvable, wired 2026-07-17) → enrich → validate; status per field: estimated / verified / measured |
 | Cache | server/src/cache/ | better-sqlite3, keyed by Spotify track ID; never re-fetch cached |
 | Exports | server/src/export/ | Spotify playlist (create/update), m3u8, csv, txt, YouTube links, Rekordbox XML, set sheet |
 | Analyzer | analyzer/ | Python FastAPI; librosa BPM + chroma/K-S key; folder scan; match by tags/filename |
