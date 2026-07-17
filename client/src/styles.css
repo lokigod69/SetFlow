@@ -230,6 +230,57 @@ textarea::placeholder {
   margin-bottom: 18px;
 }
 
+/* collapsed composer: the set's brief on one calm line */
+.intent-brief {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: 14px;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  border-radius: var(--r-lg);
+  transition: border-color var(--m-fast) ease;
+}
+.intent-brief:hover {
+  border-color: var(--c-text-faint);
+}
+.intent-brief > * {
+  min-width: 0;
+}
+.intent-brief-intent {
+  flex: 1 1 auto;
+  color: var(--c-text);
+  font-weight: 550;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.intent-brief-constraints {
+  flex: 0 1 auto;
+  color: var(--c-text-muted);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.intent-brief-edit {
+  flex: none;
+  margin-left: auto;
+  color: var(--c-text-faint);
+  transition: color var(--m-fast) ease;
+}
+.intent-brief:hover .intent-brief-edit {
+  color: var(--c-text);
+}
+
+/* quiet collapse affordance inside the expanded composer */
+.intent-collapse {
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
 .controls-row {
   display: flex;
   flex-wrap: wrap;
@@ -316,6 +367,18 @@ textarea::placeholder {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+.track-drag-handle {
+  color: var(--c-text-faint);
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+.track-drag-handle[aria-disabled='true'] {
+  cursor: default;
+}
+.track-drag-handle:active {
+  cursor: grabbing;
 }
 @media (max-width: 900px) {
   .options-row {

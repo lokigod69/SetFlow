@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import type { IntentMode } from '@setflow/shared';
-import { useState, type KeyboardEvent } from 'react';
+import { useEffect, useState, type KeyboardEvent } from 'react';
 import { useSetflow } from '../store';
 import { useTheme } from '../theme/ThemeProvider';
 import { strictnessLabel } from './helpers';
@@ -14,11 +14,23 @@ export function IntentBar() {
   const constraints = useSetflow((s) => s.constraints);
   const stage = useSetflow((s) => s.stage);
   const error = useSetflow((s) => s.error);
+  const setId = useSetflow((s) => s.currentSet?.id ?? null);
+  const setIntent = useSetflow((s) => s.currentSet?.intent);
+  const setConstraints = useSetflow((s) => s.currentSet?.constraints);
   const updateDraft = useSetflow((s) => s.updateDraft);
   const updateConstraints = useSetflow((s) => s.updateConstraints);
   const generate = useSetflow((s) => s.generate);
   const { motion: springs } = useTheme();
   const [artist, setArtist] = useState('');
+
+  // Collapse state is local to the composer. When a new set document arrives
+  // (id change) auto-collapse to the brief; when no set is loaded (id null)
+  // we always render the full composer regardless of this flag.
+  const [collapsed, setCollapsed] = useState(false);
+  useEffect(() => {
+    setCollapsed(setId !== null);
+  }, [setId]);
+
   const needed = draft.mode === 'seed' ? draft.seedTrack.trim() : draft.mode === 'journey'
     ? draft.startTrack.trim() && draft.endTrack.trim() : draft.mode === 'vibe'
       ? draft.vibeText.trim() : draft.mode === 'artist-mesh' ? draft.artists.length > 0 : true;
@@ -31,10 +43,30 @@ export function IntentBar() {
     if (event.key === 'Enter') { event.preventDefault(); addArtist(); }
   };
 
-  return <section className="panel panel-pad intent-panel" aria-label="Set intent">
+  const showBrief = setId !== null && collapsed;
+
+  // The brief describes the LOADED SET (its persisted intent/constraints), never the
+  // mutable composer draft — loading a historical set must not show stale draft text.
+  const intentText = (() => {
+    if (!setIntent) return '';
+    switch (setIntent.mode) {
+      case 'seed': return setIntent.seedTrack?.trim() || 'Seed Track';
+      case 'journey': return setIntent.startTrack?.trim() && setIntent.endTrack?.trim()
+        ? `${setIntent.startTrack.trim()} → ${setIntent.endTrack.trim()}` : 'A to B';
+      case 'vibe': return setIntent.vibeText?.trim() || 'Vibe';
+      case 'artist-mesh': return setIntent.artists?.length ? setIntent.artists.join(' × ') : 'Artist Mesh';
+      case 'curve-first': return setIntent.vibeText?.trim() || 'custom curve';
+    }
+  })();
+  const constraintsText = setConstraints
+    ? `${setConstraints.setSize.value} ${setConstraints.setSize.type === 'minutes' ? 'min' : 'tracks'} · ${setConstraints.energyBehavior === 'rise-peak-cooldown' ? 'rise / peak / cooldown' : setConstraints.energyBehavior} · harmony ${strictnessLabel(setConstraints.harmonicStrictness)} · Δ ${setConstraints.bpmPolicy.maxDeltaPercent}%`
+    : '';
+
+  const editor = <>
     <div className="mode-row">
       <span className="label">start with</span>
       {modes.map(([id, label]) => <button key={id} className={`chip ${draft.mode === id ? 'active' : ''}`} onClick={() => updateDraft({ mode: id })}>{label}</button>)}
+      {setId !== null && <button className="btn quiet intent-collapse" onClick={() => setCollapsed(true)} aria-expanded={true} aria-label="Collapse composer">collapse</button>}
     </div>
     <AnimatePresence mode="wait" initial={false}>
       <motion.div key={draft.mode} initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={springs.spring} style={{ overflow: 'hidden' }} className="intent-input-zone">
@@ -53,5 +85,39 @@ export function IntentBar() {
       <button className="btn primary architect-btn" disabled={!needed || stage !== 'idle'} onClick={() => void generate()}>Architect the set</button>
     </div>
     {stage === 'error' && error && <p className="danger-text" style={{ margin: '10px 0 0' }}>{error}</p>}
-  </section>;
+  </>;
+
+  return <AnimatePresence mode="wait" initial={false}>
+    {showBrief
+      ? <motion.button
+          key="brief"
+          type="button"
+          className="panel intent-brief"
+          aria-label="Set intent"
+          aria-expanded={false}
+          onClick={() => setCollapsed(false)}
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={springs.spring}
+          style={{ overflow: 'hidden' }}
+        >
+          <span className="label">brief</span>
+          <span className="intent-brief-intent">{intentText}</span>
+          <span className="intent-brief-constraints mono">{constraintsText}</span>
+          <span className="intent-brief-edit label">edit</span>
+        </motion.button>
+      : <motion.section
+          key="editor"
+          className="panel panel-pad intent-panel"
+          aria-label="Set intent"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: 'auto' }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={springs.spring}
+          style={{ overflow: 'hidden' }}
+        >
+          {editor}
+        </motion.section>}
+  </AnimatePresence>;
 }

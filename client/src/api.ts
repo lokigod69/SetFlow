@@ -81,6 +81,8 @@ export const api = {
     post<{ jobId: string }>(`/api/sets/${id}/alternatives`, { trackId }),
   swap: (id: string, fromTrackId: string, toCandidate: BrainTrack, optionId?: string) =>
     post<SetDocument>(`/api/sets/${id}/swap`, { fromTrackId, toCandidate, optionId }),
+  reorder: (id: string, optionId: string, trackIds: string[]) =>
+    post<SetDocument>(`/api/sets/${id}/reorder`, { optionId, trackIds }),
 
   // exports
   exportSpotify: (id: string, optionId: string) =>

@@ -41,6 +41,7 @@ interface SetflowState {
   setActiveOption: (id: string) => void;
   loadSet: (id: string) => Promise<void>;
   toggleStar: (trackId: string) => Promise<void>;
+  reorderOption: (optionId: string, trackIds: string[]) => Promise<void>;
   finalize: () => Promise<void>;
   fixTransition: (optionId: string, transitionIndex: number) => Promise<void>;
   renameSet: (name: string) => Promise<void>;
@@ -61,9 +62,12 @@ const THEME_KEY = 'setflow.theme';
 
 // Monotonic tokens so a slow async completion can't clobber fresher state.
 // `setSeq` guards every op that REPLACES currentSet (generate/remix/finalize/
-// fixTransition/loadSet); `starSeq` orders the optimistic star toggles.
+// fixTransition/loadSet); `starSeq` and `reorderSeq` order their optimistic edits.
 let setSeq = 0;
 let starSeq = 0;
+let reorderSeq = 0;
+// FIFO chain so reorder HTTP requests hit the server in dispatch order.
+let reorderChain: Promise<unknown> = Promise.resolve();
 
 const initialDraft: IntentDraft = {
   mode: 'vibe',
@@ -182,6 +186,31 @@ export const useSetflow = create<SetflowState>((set, get) => ({
       if (my !== starSeq) return;
       const cur = get().currentSet;
       if (cur && cur.id === doc.id) set({ currentSet: { ...cur, starredTrackIds: prev } }); // roll back
+    }
+  },
+
+  reorderOption: async (optionId, trackIds) => {
+    const doc = get().currentSet;
+    if (!doc) return;
+    const option = doc.options.find((o) => o.id === optionId);
+    if (!option) return;
+    const prev = option.trackIds;
+    const options = doc.options.map((o) => o.id === optionId ? { ...o, trackIds } : o);
+    const my = ++reorderSeq;
+    set({ currentSet: { ...doc, options } }); // optimistic; transitions update with the server doc
+    try {
+      // Serialize requests: two quick drags must reach the server in order, or the
+      // older write could persist last while the UI shows the newer one.
+      const send = reorderChain.then(() => api.reorder(doc.id, optionId, trackIds));
+      reorderChain = send.then(() => undefined, () => undefined);
+      const saved = await send;
+      if (my !== reorderSeq) return; // a newer reorder already superseded this response
+      const cur = get().currentSet;
+      if (cur && cur.id === saved.id) set({ currentSet: saved });
+    } catch {
+      if (my !== reorderSeq) return;
+      const cur = get().currentSet;
+      if (cur && cur.id === doc.id) set({ currentSet: { ...cur, options: cur.options.map((o) => o.id === optionId ? { ...o, trackIds: prev } : o) } }); // roll back
     }
   },
 

@@ -62,3 +62,23 @@ Wrong turns are part of the memory.
 **Status:** active
 **Decision:** `config.ts` + `cache/db.ts` honor `SETFLOW_DATA_DIR`; the acceptance runner sets it to `verify/.data` (wiped per run, gitignored).
 **Why:** Verify runs shared the real app DB and dumped 52 mock sets into the user's visible history. Isolation also makes runs deterministic (no cache bleed between mock and live).
+
+## 2026-07-17 — Playlist export stamps a description; cover art is parked
+**Status:** active
+**Decision:** Spotify export writes `description` (vibe text + unicode energy glyphs + attribution, ≤300 chars) and keeps `name` in sync on every re-export. Cover-art upload is NOT built.
+**Why:** Description needs no new permissions. Cover art needs the `ugc-image-upload` scope (forces every user through re-auth) plus server-side JPEG rendering — disproportionate for v2; parked in ROADMAP.
+
+## 2026-07-17 — Transition advice survives edits by (from→to) pair, never by index
+**Status:** active
+**Decision:** `computeTransitions` carries existing blend/note over only when the same track adjacency still exists; new adjacencies get computed defaults. Explicit brain-supplied transitions (finalize/propose) still win by index for their own ordering.
+**Why:** Index-based reuse pinned old advice ("long blend, ride the outro") onto brand-new track pairs after a drag-reorder — confidently wrong guidance in a tool whose whole point is verified claims. Trade-off: an adjacency broken then re-formed loses its original note (regenerable via "fix").
+
+## 2026-07-17 — Reorder concurrency: client FIFO + export resync, not server CAS
+**Status:** active
+**Decision:** Reorder HTTP requests are serialized client-side (promise chain); the Spotify export route re-fetches the doc before saving and resyncs the playlist once if the exported option's order changed mid-flight. No document revision/compare-and-swap layer.
+**Why:** Adversarial review (codex) found both races. For a local-first single-user app, request serialization + one resync closes them at ~5 lines; a revision protocol would touch shared types, every mutation route, and the client for marginal residual risk.
+
+## 2026-07-17 — v2 delegation pattern held: codex executes, opus does taste, Fable arbiters
+**Status:** active
+**Decision:** Feature waves run as: Fable writes self-contained specs → codex (server/full-stack) + opus subagent (client taste) execute in parallel on disjoint files → Fable line-reviews every diff → codex adversarial-review gates the ship (round 2 confirmed round 1's fixes and found only new, smaller issues).
+**Why:** First full run of the delegation layer produced 4 features + 6 review fixes in one session with all gates green. Two adversarial rounds caught 6 real defects the implementers (and the arbiter's line review) missed — the review pass is load-bearing, keep it.

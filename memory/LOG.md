@@ -2,6 +2,20 @@
 Newest first. Append-only — entries are never rewritten.
 When this file exceeds ~300 lines, move the oldest half to `archive/log-2026.md`.
 
+## 2026-07-17 (session 4) — v2 polish wave: 4 features, delegated build + adversarial review (6 fixes)
+- **Delegation run (first full one):** Fable orchestrated/reviewed; codex gpt-5.6-sol high built the server features and drag-reorder, an opus subagent built the compact composer. Two codex adversarial review rounds gated the ship; every executor diff was arbiter-reviewed line-by-line before acceptance.
+- **Four features landed:**
+  1. **Second replace round** (routes.ts hydrate): replace pass loops up to 2×; failed replacement candidates are blacklisted in the round-2 prompt ("do not propose these again"). Best-effort semantics preserved.
+  2. **Playlist description on export** (playlists.ts): `buildPlaylistDescription` = vibe text + unicode energy-arc glyphs (▁▂▃▄▅▆▇█) + "architected with SETFLOW", 300-char cap that never truncates the suffix; sent on create AND re-export (PUT details also syncs renamed set names). Details sync is best-effort with a warn log. 4 new unit tests.
+  3. **Compact composer** (IntentBar.tsx): when a set is loaded the composer collapses to a one-line "brief" (intent digest + constraints digest, sourced from the SET's persisted intent/constraints — not the draft); click to expand, auto-collapse on new doc id. Empty-state hero unchanged. Screenshot-verified on Horizon.
+  4. **Drag-to-reorder** (OptionColumn/store/api + POST /api/sets/:id/reorder): ⠿ handle per row (useDragControls, dragListener=false — row click/star untouched), optimistic order with rollback, server permutation-check + revalidate. Live-verified in Chrome: dragged track 03→02, transitions recomputed with fresh warnings; restored via API.
+- **Adversarial review round 1 (4 findings, all fixed):** export route re-fetches doc before save (was clobbering concurrent edits); computeTransitions now carries blend/note by (from→to) PAIR not index (was pinning stale advice to new adjacencies after reorder); brief sources from SetDocument not draft; details-PUT failures logged.
+- **Round 2 (2 findings, both fixed):** client serializes reorder requests through a FIFO promise chain (out-of-order persist race); export route resyncs the playlist once if the option order changed while Spotify calls were in flight.
+- Also: client `test` script gets `--passWithNoTests` (root `npm test` used to exit 1 on the test-less client).
+- **Gates at checkpoint:** shared 15 + server 9 tests green; tsc clean ×3; verify 8 PASS + 2 PARTIAL; app relaunched and live-checked (history clean, 5 sets).
+- **New gotcha (documented in STATE):** `npm run verify` needs port 8321 free — with the real server holding it, the runner's health check hits the real server and AT1 invokes the REAL brain, then times out. Stop the app first, verify, relaunch.
+- **Files:** server/src/routes.ts, server/src/spotify/playlists.ts, server/src/pipeline/assemble.ts, server/src/server.test.ts, client/src/components/{IntentBar,OptionColumn}.tsx, client/src/{store,api}.ts, client/src/styles.css, client/package.json.
+
 ## 2026-07-16/17 (session 3e) — AT6 LIVE PASS, live-pipeline bug hunt (4 real fixes), hero layout, verify isolation
 - **AT6 live verified:** real playlist `4GavmctOvPASILfpcPPjGD` ("SETFLOW - golden hour brazil beach party", 8 items) created in user's Spotify account via the app's export route; re-export returned the SAME playlist id; link persisted on the SetDocument; items count read back via API. The mock→live jump exposed four real bugs, all fixed and live-verified:
   1. **Resolve query cascade** (resolve.ts): brains suffix everything with "Original/Extended Mix"; the old single query appended mix as free text → 0 results when Spotify's title lacks the suffix → 5/22 resolved. Cascade mix→mixless→plain now yields ~20-22/24.
